@@ -9,7 +9,7 @@
  *
  * Changelog
  * ---------
- * 3.1.0 - W-012 (2026-10-21): front page Ledger hero (A v3). ?ww_hero=ledger previews it, ?ww_hero=w009 shows the W-009 hero. WW_HERO_LEDGER_DEFAULT picks the default (false, deploy A).
+ * 3.1.0 - W-012 (2026-10-21): front page Ledger hero (A v3). ?ww_hero=ledger previews it, ?ww_hero=w009 shows the W-009 hero. WW_HERO_LEDGER_DEFAULT picks the default (true, deploy B).
  * 3.0.0 - front page gets a cinematic light hero (.ww-cine-hero: Instrument
  *         Serif display type, fade-rise entrance, self-hosted looping video
  *         background with rAF fade in/out, gradient legibility overlays).
@@ -732,7 +732,7 @@ body.ww-hero-active .entry-header { display: none !important; }
 
 // ------- W-012 LEDGER HERO ------------------------------------------------
 if ( ! defined( 'WW_HERO_LEDGER_DEFAULT' ) ) {
-	define( 'WW_HERO_LEDGER_DEFAULT', false );
+	define( 'WW_HERO_LEDGER_DEFAULT', true );
 }
 
 /** ?ww_hero=ledger forces the Ledger, ?ww_hero=w009 forces the W-009 hero, otherwise WW_HERO_LEDGER_DEFAULT. */
