@@ -3,12 +3,13 @@
  * Plugin Name:       WrayWest Hero
  * Plugin URI:        https://wraywestblog.com
  * Description:       Typography-led hero above content on singular posts and pages. Removes GeneratePress native featured-image auto-render and the duplicate entry-header so there is no duplication and no dual H1.
- * Version:           3.0.0
+ * Version:           3.1.0
  * Author:            WrayWest
  * License:           GPL-2.0-or-later
  *
  * Changelog
  * ---------
+ * 3.1.0 - W-012 (2026-10-21): front page Ledger hero (A v3). ?ww_hero=ledger previews it, ?ww_hero=w009 shows the W-009 hero. WW_HERO_LEDGER_DEFAULT picks the default (false, deploy A).
  * 3.0.0 - front page gets a cinematic light hero (.ww-cine-hero: Instrument
  *         Serif display type, fade-rise entrance, self-hosted looping video
  *         background with rAF fade in/out, gradient legibility overlays).
@@ -403,6 +404,10 @@ function ww_hero_render() {
  *   override targeting .ww-site-hero is inert here without editing it.
  */
 function ww_hero_render_front() {
+	if ( ww_hero_ledger_wanted() ) {
+		ww_hero_render_ledger();
+		return;
+	}
 	/*
 	 * Direction C — "Centered search hero" (deployed 2026-06-14), adapted from
 	 * hsuper.tools at the owner's request: pill badge, large centered serif
@@ -722,6 +727,58 @@ body.ww-hero-active .entry-header { display: none !important; }
 		<div class="ww-rcpt-row"><span class="ww-rcpt-row-k">What the gurus show you</span><span class="ww-rcpt-row-v">the top 1%</span></div>
 	</aside>
 </section>
+	<?php
+}
+
+// ------- W-012 LEDGER HERO ------------------------------------------------
+if ( ! defined( 'WW_HERO_LEDGER_DEFAULT' ) ) {
+	define( 'WW_HERO_LEDGER_DEFAULT', false );
+}
+
+/** ?ww_hero=ledger forces the Ledger, ?ww_hero=w009 forces the W-009 hero, otherwise WW_HERO_LEDGER_DEFAULT. */
+function ww_hero_ledger_wanted() {
+	$q = isset( $_GET['ww_hero'] ) ? sanitize_key( wp_unslash( $_GET['ww_hero'] ) ) : '';
+	if ( 'ledger' === $q ) {
+		return true;
+	}
+	if ( 'w009' === $q ) {
+		return false;
+	}
+	return (bool) WW_HERO_LEDGER_DEFAULT;
+}
+
+/** W-012 front page hero, design A v3 "The Ledger". Styles live in uploads/ww-css/wraywest.css (W012 block, scoped to section.wwl). */
+function ww_hero_render_ledger() {
+	?>
+<section class="wwl" aria-labelledby="wwl-h">
+ <div class="wwl-in">
+  <div class="wwl-copy">
+   <h1 id="wwl-h">A second income, built <em>after the shift.</em></h1>
+   <p class="wwl-lede wwl-rise wwl-d2">I’m a full-time chef building a creator business on the side. Real numbers, every failure shown. No hype, no $997 courses.</p>
+   <div class="wwl-ctas wwl-rise wwl-d3"><a class="wwl-btn wwl-p" href="https://wraywestblog.com/start-here/">Start here <span aria-hidden="true">→</span></a><a class="wwl-btn wwl-s" href="#ww-home-band-subscribe">Get the newsletter</a></div>
+   <ul class="wwl-chips wwl-rise wwl-d4"><li>Started August 2025</li><li>No $997 courses</li><li>Real receipts, not fake screenshots</li><li>Sourced, never made up</li></ul>
+  </div>
+  <aside class="wwl-card wwl-rise wwl-d3" data-wwl-tilt aria-label="The receipts so far">
+   <h2 class="wwl-k"><span>The receipts so far</span><span class="wwl-life"><i aria-hidden="true"></i>Lifetime</span></h2>
+   <div class="wwl-row"><div><b>OLSP</b><small>Source: my OLSP dashboard</small></div><span class="wwl-amt" data-wwl-count="810.95">$810.95</span></div>
+   <div class="wwl-row"><div><b>LeadsLeap</b><small>Source: my LeadsLeap account</small></div><span class="wwl-amt" data-wwl-count="17.77">$17.77</span></div>
+   <div class="wwl-bar">
+    <p class="wwl-cap"><span>The day, as it runs</span><span>24 hours</span></p>
+    <div class="wwl-track" role="img" aria-label="6:30 AM to 3:00 PM is the chef shift. After 3:00 PM is where WrayWest gets built."><i class="wwl-now" data-wwl-now aria-hidden="true"><span></span></i></div>
+    <ul class="wwl-legend"><li><i class="wwl-sw wwl-sw1" aria-hidden="true"></i>6:30&nbsp;AM to 3:00&nbsp;PM, the chef shift</li><li><i class="wwl-sw wwl-sw2" aria-hidden="true"></i>After 3:00&nbsp;PM, WrayWest</li></ul>
+   </div>
+  </aside>
+ </div>
+</section>
+<script>
+/* W-012 Ledger, ~1KB: places the "now" marker at the visitor's local time, counts the two sourced figures up once, gentle tilt on fine pointers. All motion skipped under prefers-reduced-motion. */
+(function(){var d=new Date(),p=(d.getHours()*60+d.getMinutes())/14.4,n=document.querySelector('[data-wwl-now]');
+if(n){n.style.left=p+'%';var l=n.firstChild;l.textContent='Your time now: '+d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});if(p<18)l.className='wwl-l';else if(p>82)l.className='wwl-r'}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+document.querySelectorAll('[data-wwl-count]').forEach(function(e){var v=+e.getAttribute('data-wwl-count'),s=performance.now();
+function f(t){var k=Math.min(1,(t-s)/500),q=1-Math.pow(1-k,3);e.textContent='$'+(v*q).toFixed(2);if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)});
+var c=document.querySelector('[data-wwl-tilt]');if(c&&matchMedia('(hover: hover) and (pointer: fine)').matches)addEventListener('pointermove',function(e){var x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;c.style.transform='perspective(1200px) rotateY('+(x*3).toFixed(2)+'deg) rotateX('+(-y*3).toFixed(2)+'deg)'},{passive:true})})();
+</script>
 	<?php
 }
 
