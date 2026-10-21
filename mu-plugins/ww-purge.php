@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WW Purge Endpoint (W-011)
- * Description: POST /wp-json/ww/v1/purge with header X-WW-Token. Purges all LiteSpeed cache and UCSS. 1 call per minute.
+ * Description: POST /wp-json/ww/v1/purge with header X-WW-Token. Purges all LiteSpeed cache and UCSS. 1 call per minute (rate limit in option ww_purge_last, set after purge).
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
@@ -21,15 +21,20 @@ function ww_purge_handle( WP_REST_Request $req ) {
 	if ( ! hash_equals( WW_PURGE_TOKEN_SHA256, hash( 'sha256', $provided ) ) ) {
 		return new WP_REST_Response( array( 'ok' => false ), 403 );
 	}
-	if ( get_transient( 'ww_purge_rl' ) ) {
+	$now  = time();
+	$last = (int) get_option( 'ww_purge_last', 0 );
+	if ( $last && ( $now - $last ) < 60 ) {
 		return new WP_REST_Response( array( 'ok' => false ), 429 );
 	}
-	set_transient( 'ww_purge_rl', 1, 60 );
 	if ( has_action( 'litespeed_purge_all' ) ) { do_action( 'litespeed_purge_all' ); }
-	if ( has_action( 'litespeed_purge_ucss' ) ) { do_action( 'litespeed_purge_ucss' ); }
-	elseif ( class_exists( '\LiteSpeed\Purge' ) && method_exists( '\LiteSpeed\Purge', 'purge_ucss' ) ) { \LiteSpeed\Purge::purge_ucss(); }
-	if ( class_exists( '\LiteSpeed\UCSS' ) && method_exists( '\LiteSpeed\UCSS', 'cls' ) ) {
-		try { $u = \LiteSpeed\UCSS::cls(); if ( method_exists( $u, 'rm_cache' ) ) { $u->rm_cache( true ); } } catch ( \Throwable $e ) {}
+	// Mirrors private \LiteSpeed\Purge::_purge_all_ucss() using its public parts (LSCWP purge.cls.php).
+	if ( class_exists( '\\LiteSpeed\\CSS' ) && class_exists( '\\LiteSpeed\\Data' ) ) {
+		try {
+			do_action( 'litespeed_purged_all_ucss' );
+			\LiteSpeed\CSS::cls()->rm_cache_folder( 'ucss' );
+			\LiteSpeed\Data::cls()->url_file_clean( 'ucss' );
+		} catch ( \Throwable $e ) {}
 	}
+	update_option( 'ww_purge_last', time(), false );
 	return new WP_REST_Response( array( 'ok' => true ), 200 );
 }
