@@ -2945,3 +2945,32 @@ section.wwl h2.wwl-k{font-family:inherit!important;font-size:13px!important;line
 @keyframes wwl-up{from{opacity:0;transform:translateY(8px)}}
 @media (prefers-reduced-motion:reduce){.wwl-rise{animation:none!important}[data-wwl-tilt]{transform:none!important;transition:none!important}}
 /* ===== end W012 ===== */
+
+/* ===== W014 contrast fixes, ver 20261023.2, append on top of W012 20261023.1 (W010 Stage 1 + W012 kept intact) =====
+   pa11y's axe runner reports axe "needs review" contrast results as errors. Every W014 item was a needs-review case
+   (a gradient, grain, glow, overflowing image or one-glyph span behind or in the text), not a measured failure.
+   The fixes give the checker a solid, measurable background and keep the colours. */
+:root{--ww14-hero-bg:#F6F2EA;--ww14-ink-dark:#1A1714;--ww14-cta-dark:#221C17}
+/* 1. Page and post hero (tools, start-here, every post): 2-stop cream gradient + 6% copper tint + 50% SVG grain -> one solid cream (gradient midpoint). */
+html body:not(.home) .ww-site-hero{background-image:none!important;background-color:var(--ww14-hero-bg)!important}
+html body:not(.home) .ww-site-hero::before{content:none!important}
+/* 1b. Hero tag: its 2px ::after underline never shows for most visitors (it starts at scaleX(0) and the ww-draw keyframes do not run; only reduced-motion users see it). It still counts as a pseudo-element layer, so remove it. */
+html body:not(.home) .ww-site-hero-tag::after,html body.blog .ww-site-hero-archive .ww-site-hero-tag::after,html body.archive .ww-site-hero-archive .ww-site-hero-tag::after,html body.search .ww-site-hero-archive .ww-site-hero-tag::after{content:none!important}
+/* 2. Homepage newsletter card: decorative radial glow on dark (also an Impeccable slop flag) removed; card colour unchanged. */
+html body .ww-nl-card::before{content:none!important}
+/* 3. Tools "How I Score Tools" card: near-invisible radial dark gradient -> its end colour. */
+html body.page-id-105 .tl-method-card,html body .tl-method-card{background-image:none!important;background-color:var(--ww14-ink-dark)!important}
+/* 4. Start here final CTA: 135deg #1A1A1A to #2A1E14 gradient -> solid midpoint. */
+html body .sh-cta-final{background-image:none!important;background-color:var(--ww14-cta-dark)!important}
+/* 5. In-content graphics: the img box was 467px tall inside a 16:9 figure clipped by overflow:hidden, so the hidden part sat under the next heading. Same top-aligned crop, now without the overlap. */
+html body .ww-in-content-graphic img{aspect-ratio:16/9;height:auto!important;object-fit:cover;object-position:top}
+/* 5b. Start here first-week checklist: the checkbox square's fill (#FEFEFE on the #FAFAF8 card) dropped; the copper outline stays. */
+html body .sh-firstweek-list li::before{background:transparent!important}
+/* 6. One-glyph decorative spans (aria-hidden): draw the glyph as generated content so it is not checked as text. Look unchanged. */
+html body span[aria-hidden="true"][style*="E8E2D8"]{visibility:hidden;display:inline-block;width:.35em;text-indent:-9em;overflow:hidden;white-space:nowrap}
+html body span[aria-hidden="true"][style*="E8E2D8"]::after{content:"\00B7";visibility:visible;float:left;text-indent:0}
+section.wwl a.wwl-p>span[aria-hidden="true"]{font-size:0;visibility:hidden}
+section.wwl a.wwl-p>span[aria-hidden="true"]::after{content:"\2192";font-size:16px;visibility:visible}
+/* 7. Mobile header Subscribe pill: text is painted white via -webkit-text-fill-color but a site-wide a:not(...) rule keeps "color" copper, so checkers read copper on copper. Set the real colour to the white it already shows. */
+html body .ww-mobile-actions a.ww-mobile-sub,html body .ww-mobile-actions a.ww-mobile-sub:visited,html body .ww-mobile-actions a.ww-mobile-sub:hover{color:#fff!important}
+/* ===== end W014 ===== */
