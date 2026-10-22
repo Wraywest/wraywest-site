@@ -14,11 +14,21 @@ add_filter( 'the_content', function ( $c ) {
 /* (1) Thank-you page: confirm first, PDF only after confirmation (Reach email). */
 add_filter( 'the_content', function ( $c ) {
 	if ( ! is_page( 'deck-thanks' ) || ! in_the_loop() || ! is_main_query() ) return $c;
-	return '<div class="ww-deck-thanks"><h2>Check your inbox to confirm</h2>'
+	return '<div class="ww-deck-thanks"><h2>One quick step left</h2>'
 		. '<p>I just sent you a confirmation email. Click the confirm button in it, and the Keep-or-Cancel Deck (PDF) arrives in your inbox right after.</p>'
 		. '<p>Nothing there in a few minutes? Check spam or promotions, then move it to your inbox so the next one lands.</p>'
 		. '<p>While you wait: the deck is the printable version of the live <a href="/tools/">tools directory</a>, which gets updated as scores change.</p></div>';
 }, 20 );
+
+/* W-015b: page 3659 title "Your deck is ready" contradicted the confirm-first copy. Render-time only, the post title in the DB is untouched. */
+add_filter( 'the_title', function ( $t, $id = 0 ) {
+	if ( (int) $id === 3659 && ! is_admin() ) return 'Check your inbox to confirm your email';
+	return $t;
+}, 10, 2 );
+add_filter( 'document_title_parts', function ( $p ) {
+	if ( is_page( 3659 ) ) $p['title'] = 'Check your inbox to confirm your email';
+	return $p;
+} );
 
 /* (3) GA4 deck_signup. Placement is stored on submit, the event fires on /deck-thanks/ (reached only after a successful submit). */
 add_action( 'wp_footer', function () { ?>
