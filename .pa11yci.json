@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "runners": ["axe"],
+    "standard": "WCAG2AA",
+    "timeout": 60000,
+    "wait": 2000,
+    "concurrency": 1,
+    "chromeLaunchConfig": { "args": ["--no-sandbox", "--disable-dev-shm-usage"] }
+  },
+  "urls": [
+    "https://wraywestblog.com/",
+    "https://wraywestblog.com/tools/",
+    "https://wraywestblog.com/blog/make-automation-visual-workflows/",
+    "https://wraywestblog.com/start-here/"
+  ]
+}

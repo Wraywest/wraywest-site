@@ -1,0 +1,66 @@
+name: Link check
+
+on:
+  schedule:
+    - cron: "17 10 * * 1"   # Mondays 10:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: link-check
+  cancel-in-progress: true
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build URL list from sitemaps
+        run: |
+          set -euo pipefail
+          : > urls.txt
+          for s in post-sitemap.xml page-sitemap.xml; do
+            curl -fsSL --retry 2 "https://wraywestblog.com/$s" \
+              | grep -oE '<loc>[^<]+' | sed 's/<loc>//' \
+              | grep -v '/wp-content/' | grep -v '/deck-thanks' >> urls.txt
+          done
+          sort -u -o urls.txt urls.txt
+          echo "Pages to scan: $(wc -l < urls.txt)"
+
+      - name: Run lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --no-progress --files-from urls.txt
+          output: ./lychee/report.md
+          format: markdown
+          fail: false
+          jobSummary: true
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-check-report
+          path: lychee/report.md
+          retention-days: 30
+
+      - name: Create or update one tracking issue
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          TITLE="Weekly link check: broken links found"
+          NUM=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number // empty')
+          if [ -n "$NUM" ]; then
+            gh issue edit "$NUM" --body-file lychee/report.md
+            gh issue comment "$NUM" --body "Report refreshed by run ${{ github.run_id }}."
+          else
+            gh issue create --title "$TITLE" --body-file lychee/report.md
+          fi

@@ -1,0 +1,25 @@
+# lychee config for weekly link check of https://wraywestblog.com
+max_concurrency = 4
+max_retries = 2
+retry_wait_time = 5
+timeout = 30
+user_agent = "Mozilla/5.0 (compatible; WrayWest-LinkCheck/1.0; +https://wraywestblog.com)"
+accept = ["200..=299", "403", "429", "999"]
+exclude_path = []
+exclude = [
+  "^https?://(www\\.)?(x|twitter)\\.com",
+  "^https?://(www\\.)?linkedin\\.com",
+  "^https?://(www\\.)?(facebook|instagram|threads)\\.(com|net)",
+  "^https?://bsky\\.app",
+  "^https?://(www\\.)?amazon\\.",
+  "^https?://amzn\\.to",
+  "^https?://([a-z0-9-]+\\.)?(impact|partnerstack|shareasale|awin1|clickbank)\\.",
+  "^https?://wraywestblog\\.com/(go|recommends|out)/",
+  "^https?://wraywestblog\\.com/wp-(admin|login)",
+  "^https?://wraywestblog\\.com/export_",
+  "^https?://wraywestblog\\.com/deck-thanks",
+  "^https?://fonts\\.(googleapis|gstatic)\\.com",
+  "^https?://(www\\.)?w3\\.org",
+  "^mailto:",
+  "^tel:",
+]

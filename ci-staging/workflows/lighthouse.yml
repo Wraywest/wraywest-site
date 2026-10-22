@@ -1,0 +1,45 @@
+name: Lighthouse
+
+on:
+  schedule:
+    - cron: "37 10 * * 1"   # Mondays 10:37 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      # /deck-thanks/ is intentionally not audited.
+      - name: Lighthouse CI
+        id: lhci
+        uses: treosh/lighthouse-ci-action@v12
+        continue-on-error: true   # budgets and assertions are warnings only
+        with:
+          urls: |
+            https://wraywestblog.com/
+            https://wraywestblog.com/tools/
+            https://wraywestblog.com/blog/make-automation-visual-workflows/
+          configPath: ./lighthouserc.json
+          budgetPath: ./lighthouse-budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: false
+
+      - name: Score summary
+        if: always()
+        env:
+          MANIFEST: ${{ steps.lhci.outputs.manifest }}
+        run: |
+          echo "## Lighthouse scores (median run)" >> "$GITHUB_STEP_SUMMARY"
+          echo "| URL | Perf | A11y | Best practices | SEO |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|---|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          echo "$MANIFEST" | jq -r '.[] | select(.isRepresentativeRun) | "| \(.url) | \(.summary.performance*100|round) | \(.summary.accessibility*100|round) | \(.summary["best-practices"]*100|round) | \(.summary.seo*100|round) |"' >> "$GITHUB_STEP_SUMMARY" || true

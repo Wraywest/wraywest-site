@@ -1,0 +1,39 @@
+name: Accessibility (pa11y-ci)
+
+on:
+  schedule:
+    - cron: "57 10 * * 1"   # Mondays 10:57 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pa11y
+  cancel-in-progress: true
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install pa11y-ci
+        run: npm install --no-save pa11y-ci@3
+      # Pages: homepage, tools, a recent post, /start-here/ (WPForms signup form).
+      - name: Run pa11y-ci
+        run: npx pa11y-ci --config .pa11yci.json --json > pa11y-report.json || echo "pa11y-ci reported issues"
+      - name: Summary
+        if: always()
+        run: |
+          echo "## pa11y-ci (axe, WCAG2AA)" >> "$GITHUB_STEP_SUMMARY"
+          jq -r '"Total: \(.total)  Passes: \(.passes)  Errors: \(.errors)", (.results | to_entries[] | "- \(.key): \(.value|length) issues")' pa11y-report.json >> "$GITHUB_STEP_SUMMARY" || cat pa11y-report.json | head -50
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pa11y-report
+          path: pa11y-report.json
+          retention-days: 30
