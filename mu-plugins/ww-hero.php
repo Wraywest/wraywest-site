@@ -239,11 +239,15 @@ function ww_hero_render() {
 	}
 
 	// ---- Tag / breadcrumb-style eyebrow ----
-	$tag_text = '';
+	$tag_text  = '';
+	$tag_topic = '';
 	if ( $is_post ) {
 		$cat = ww_hero_primary_category( $post_id );
 		if ( $cat ) {
 			$tag_text = $cat->name;
+			if ( function_exists( 'ww_p4_topic_for_category_slug' ) ) {
+				$tag_topic = ww_p4_topic_for_category_slug( $cat->slug );
+			}
 		}
 	} elseif ( $is_page && ! $is_front ) {
 		// Pages: a short SECTION KICKER, never the page title (setting tag = title
@@ -277,18 +281,23 @@ function ww_hero_render() {
 	}
 
 	// ---- Meta row ----
-	// Posts:   [read-time · date · by author]
-	// Pages:   [By author · Writing since … · Contact]
+	// Posts:   [By author, Updated date, read time, Used or Researched when validated]
+	// Pages:   [By author, Writing since, Contact]
 	// Front:   no meta
 	$meta_items = array(); // Each item is a plain string, OR an array ['html' => '<a ...>'] for prebuilt markup.
 
 	if ( $is_post ) {
-		$rt = ww_hero_read_time_minutes( $post_id );
-		if ( $rt ) {
-			$meta_items[] = $rt . ' min read';
+		$author_id = (int) get_post_field( 'post_author', $post_id );
+		if ( $author_id ) {
+			$author_name = get_the_author_meta( 'display_name', $author_id );
+			if ( $author_name ) {
+				// Link the byline to the author's archive (/author/dwayne/).
+				$author_url   = get_author_posts_url( $author_id );
+				$meta_items[] = array( 'html' => 'By <a class="ww-byline-author" href="' . esc_url( $author_url ) . '" rel="author">' . esc_html( $author_name ) . '</a>' );
+			}
 		}
-		// Show "Updated <date>" when the post was meaningfully revised after publish (E-E-A-T
-		// freshness signal that matches the schema's dateModified); else the publish date.
+		// Show "Updated <date>" when the post was meaningfully revised after publish
+		// (matches the schema dateModified); else the publish date.
 		$pub_date = get_the_date( 'F j, Y', $post_id );
 		$mod_date = get_the_modified_date( 'F j, Y', $post_id );
 		$pub_ts   = (int) get_post_time( 'U', false, $post_id );
@@ -298,16 +307,16 @@ function ww_hero_render() {
 		} elseif ( $pub_date ) {
 			$meta_items[] = $pub_date;
 		}
-		$author_id = (int) get_post_field( 'post_author', $post_id );
-		if ( $author_id ) {
-			$author_name = get_the_author_meta( 'display_name', $author_id );
-			if ( $author_name ) {
-				// Link the byline to the author's E-E-A-T archive (/author/dwayne/): gives that
-				// page an inbound link from every post + makes the credentials reachable from any
-				// byline. Added 2026-06-26.
-				$author_url     = get_author_posts_url( $author_id );
-				$meta_items[]   = array( 'html' => 'By <a class="ww-byline-author" href="' . esc_url( $author_url ) . '" rel="author">' . esc_html( $author_name ) . '</a>' );
-			}
+		$rt = ww_hero_read_time_minutes( $post_id );
+		if ( $rt ) {
+			$meta_items[] = $rt . ' min read';
+		}
+		$post_slug = (string) get_post_field( 'post_name', $post_id );
+		$use_label = function_exists( 'ww_p4_use_label' ) ? ww_p4_use_label( $post_slug ) : null;
+		if ( is_array( $use_label ) && ! empty( $use_label['text'] ) ) {
+			$meta_items[] = array(
+				'html' => '<span class="ww-use-label" data-ww-use="' . esc_attr( $use_label['key'] ) . '">' . esc_html( $use_label['text'] ) . '</span>',
+			);
 		}
 	} elseif ( $is_page && ! $is_front ) {
 		$author_id = (int) get_post_field( 'post_author', $post_id );
@@ -352,7 +361,7 @@ function ww_hero_render() {
 			<span class="ww-site-hero-kicker">Side income &middot; No hype</span>
 		<?php endif; ?>
 		<?php if ( $tag_text ) : ?>
-			<span class="ww-site-hero-tag"><?php echo esc_html( $tag_text ); ?></span>
+			<span class="ww-site-hero-tag"<?php echo $tag_topic ? ' data-ww-topic="' . esc_attr( $tag_topic ) . '"' : ''; ?>><?php echo esc_html( $tag_text ); ?></span>
 		<?php endif; ?>
 		<h1 class="<?php echo esc_attr( $title_classes ); ?>"><?php echo esc_html( $title ); ?></h1>
 		<?php if ( $subtitle ) : ?>

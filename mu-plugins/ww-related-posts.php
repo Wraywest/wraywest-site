@@ -67,10 +67,6 @@ add_action( 'generate_after_content', function () {
 		</article>
 		<?php endwhile; ?>
 	</div>
-	<div class="ww-related-cta">
-		<p>New here? Get the honest side-income playbook, one email a week.</p>
-		<a href="<?php echo esc_url( home_url( '/start-here/' ) ); ?>"><span>Start Here &rarr;</span></a>
-	</div>
 </section>
 	<?php
 	wp_reset_postdata();
