@@ -1,5 +1,11 @@
 # Cluster 1 factual diffs, unpublished
 
+The machine-applicable copy is the isolated fixtures in `phase5/fixtures/proposed/`, built by `phase5/propose_drafts.py` from the 8 Nov 2026 captures. Each omitted figure is recorded in `phase5/fixtures/proposed-manifest.json` as verification unavailable, not as false. `phase5/test_proposed.py` checks those fixtures. It is separate from the template ALL PASS. On the last run, 24 pages passed: control tags, non-FAQ scripts, style blocks, visible `$17.77` and `$810.95` counts, the Make `rel="sponsored noopener"` anchor, no sponsored Kit link, no new internal links, and visible FAQ answers match in-content FAQPage text where the question strings match. Calculator inputs stay `75000`, `28`, `30`, `5`, and `6`.
+
+Three slugs stay separate. Phase 2 named `creator-business-blueprint-second-income-2026` to `how-to-start-creator-business-no-audience`. An earlier note inspected `second-income-product-blueprint` by mistake. Proposed redirect map for this trio: none.
+
+The email cluster uses the same fixtures and the same removal rule. The unverified spam anecdote is removed. Kit links stay unsponsored. The Make link on the burnout post stays sponsored.
+
 Fetched 8 Nov 2026. Field for every change: WordPress `post_content`. These fragments are not applied to the site and are not an output-buffer rewrite. Calculator input values and formula scripts are not in any after-fragment. Receipts, forms, and Rank Math head graphs are not in any after-fragment. No 301.
 
 A checksum is the MD5 of the exact before bytes in the captured HTML, including entities.

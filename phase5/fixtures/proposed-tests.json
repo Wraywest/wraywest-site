@@ -1,0 +1,149 @@
+{
+  "failures": 0,
+  "results": [
+    {
+      "page": "blog_ab-testing-one-person-businesses.html",
+      "status": "PASS",
+      "kept": 0.908,
+      "problems": []
+    },
+    {
+      "page": "blog_content-calendar-publish-working-full-time.html",
+      "status": "PASS",
+      "kept": 0.932,
+      "problems": []
+    },
+    {
+      "page": "blog_convertkit-alternatives.html",
+      "status": "PASS",
+      "kept": 0.995,
+      "problems": []
+    },
+    {
+      "page": "blog_convertkit-review-email-marketing-creators.html",
+      "status": "PASS",
+      "kept": 0.919,
+      "problems": []
+    },
+    {
+      "page": "blog_creator-burnout-truth.html",
+      "status": "PASS",
+      "kept": 0.884,
+      "problems": []
+    },
+    {
+      "page": "blog_creator-business-blueprint-second-income-2026.html",
+      "status": "PASS",
+      "kept": 0.997,
+      "problems": []
+    },
+    {
+      "page": "blog_email-deliverability-small-senders.html",
+      "status": "PASS",
+      "kept": 0.987,
+      "problems": []
+    },
+    {
+      "page": "blog_email-list-building-100-subscribers.html",
+      "status": "PASS",
+      "kept": 0.977,
+      "problems": []
+    },
+    {
+      "page": "blog_email-marketing-playbook-solo-creators.html",
+      "status": "PASS",
+      "kept": 0.853,
+      "problems": []
+    },
+    {
+      "page": "blog_find-your-creator-niche.html",
+      "status": "PASS",
+      "kept": 0.835,
+      "problems": []
+    },
+    {
+      "page": "blog_how-to-start-creator-business-no-audience.html",
+      "status": "PASS",
+      "kept": 0.906,
+      "problems": []
+    },
+    {
+      "page": "blog_how-to-write-emails-people-want-to-open.html",
+      "status": "PASS",
+      "kept": 0.826,
+      "problems": []
+    },
+    {
+      "page": "blog_lead-magnet-ideas.html",
+      "status": "PASS",
+      "kept": 0.919,
+      "problems": []
+    },
+    {
+      "page": "blog_mindset-shift-creator-business.html",
+      "status": "PASS",
+      "kept": 0.882,
+      "problems": []
+    },
+    {
+      "page": "blog_profitable-creator-niches-full-time-employees-2026.html",
+      "status": "PASS",
+      "kept": 0.799,
+      "problems": []
+    },
+    {
+      "page": "blog_second-income-product-blueprint.html",
+      "status": "PASS",
+      "kept": 0.984,
+      "problems": []
+    },
+    {
+      "page": "blog_solo-creator-metrics-that-matter.html",
+      "status": "PASS",
+      "kept": 0.857,
+      "problems": []
+    },
+    {
+      "page": "blog_systeme-vs-convertkit.html",
+      "status": "PASS",
+      "kept": 0.966,
+      "problems": []
+    },
+    {
+      "page": "blog_welcome-email-sequence-template.html",
+      "status": "PASS",
+      "kept": 0.954,
+      "problems": []
+    },
+    {
+      "page": "blog_why-side-hustles-fail.html",
+      "status": "PASS",
+      "kept": 0.895,
+      "problems": []
+    },
+    {
+      "page": "engine.html",
+      "status": "PASS",
+      "kept": 1.006,
+      "problems": []
+    },
+    {
+      "page": "lead-magnet-builder.html",
+      "status": "PASS",
+      "kept": 1.0,
+      "problems": []
+    },
+    {
+      "page": "quit-9-to-5-calculator.html",
+      "status": "PASS",
+      "kept": 0.896,
+      "problems": []
+    },
+    {
+      "page": "start-here.html",
+      "status": "PASS",
+      "kept": 0.995,
+      "problems": []
+    }
+  ]
+}
