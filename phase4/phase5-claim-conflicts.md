@@ -58,6 +58,18 @@ Source: captured `https://wraywestblog.com/resources/`
 
 > I have never used Zapier, so this is a comparison from research, not from experience.
 
-## Unresolved, not changed this round
+## Robinhood and DataForSEO bylines now match the posts
 
-The Tools index says Used hands-on for Robinhood and DataForSEO. The post bylines for `robinhood-review` and `dataforseo-review` say Researched. Phase 1 confirmation in this run named Wise and Klarna only, so those two index labels were not moved.
+Source: captured `https://wraywestblog.com/blog/robinhood-review/`
+
+> I actually use Robinhood. I keep three accounts here: a standard individual brokerage, the newer Agentic account (which I have connected to Claude for AI-assisted trades), and a small crypto sleeve.
+
+The byline is Used. The Tools index stays Used hands-on. The Agentic account and Claude sentence is still an unsourced product claim. It was not rewritten.
+
+Source: captured `https://wraywestblog.com/blog/dataforseo-review/`
+
+> I recommend it because I use it for this blog, not because of the program.
+
+> I keep using DataForSEO because it fits how I work: pull the data, pay the penny, skip the subscription.
+
+The byline is Used. The Tools index stays Used hands-on. The body was not rewritten.

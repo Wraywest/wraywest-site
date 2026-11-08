@@ -1,5 +1,7 @@
 # Remaining Phase 4 schema and token scope
 
+The captured-corpus inventory is now in `phase4/jsonld-inventory.md`. Token merging was deferred. See `phase4/closeout-matrix.md`. The notes below are the constraints that decision used.
+
 This is a scope note from the repo and the public HTML captured read-only on 8 Nov 2026. It does not authorize a deploy, a cache clear, a hash refresh, or a schema deletion.
 
 ## What the bundle will do today
@@ -54,4 +56,4 @@ The stylesheet still has `--purple` set to the copper hex, a second warm-band se
 
 ## Next smallest unit
 
-One captured post, `https://wraywestblog.com/blog/olsp-system-review-2026/`. List each JSON-LD script, its `@type` values, and whether it is the Rank Math head graph or an in-content block. Write the keep list. Do not delete a block, do not refresh a manifest hash, and do not open Rank Math settings.
+That inventory is done for the 58 captured files, including the OLSP mapping. The next step is a review of this branch, not another edit. Rank Math settings stay closed. Manifest hashes stay the October capture. Phase 5 body rewrites stay listed in `phase4/closeout-matrix.md`.

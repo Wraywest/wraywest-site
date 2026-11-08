@@ -74,7 +74,7 @@ Numbers: `phase4/four-pages-results.json`.
 
 The hero band on these four pages already ended with a 48px gap at 1440 and a 28px gap under 700px, plus a 1px `#E6CFA8` hairline. This unit keeps that gap. The dek is ink `#3D3732`. Contrast of that dek on the band stops `#F7E3C4` and `#FBEBD0` measured 9.35 and 9.99. About H1 `#1A1A1A` on `#F7E3C4` measured 13.87. No horizontal overflow at 1440 or 390. Focus targets at 390 with reduced motion: Tools "Try the calculator" 44px, Resources "Read the framework" 44px (it was 22px before), About "Contact me" 46px, Contact "Send message" 44px. Each showed a 2px solid outline. Reduced motion sets the tools row transition to `none`. This unit does not add `transition: all`.
 
-Grain, keylight, and the older `transition: all` rules stay in the inherited stylesheet. They are existing brand decisions, not removed here.
+Grain and keylight stay in the inherited stylesheet. They are existing brand decisions. The eight `transition:all` declarations were replaced later. See the closeout section.
 
 ConvertKit, Notion, and Repurpose.io render as Researched. Make.com stays Researched. OLSP System is **Affiliate receipts**, not Used hands-on. Wise and Klarna stay Used hands-on. Systeme.io, Hostinger Horizons, LeadsLeap, Robinhood, and DataForSEO stay Used hands-on on the index. No `rel` value was added or removed. Conflicting body sentences are quoted in `phase4/phase5-claim-conflicts.md` and were not rewritten.
 
@@ -104,3 +104,14 @@ Numbers: `phase4/calculator-results.json`.
 Freelance defaults match before and after: `$82/hr`, gross `$94,286`, 1,150 billable hours, day `$656`. Zero take-home with the script's one-hour floor: `$0/hr`, 52 hours, `$0` day. Buffer 80 and 50 weeks off: `$150,000/hr`, gross `$300,000`, 2 hours, day `$1,200,000`. Load an example sets 80000, 22, 8, 9000, 32 and `$135/hr` on both copies. Quit defaults match: 4y 5mo, about April 2031, creator MRR `$6,637`, W-2 net `$4,500/mo`, 53 months. A zero creator income stays on the empty state on both copies. A boundary with `$500` monthly creator income, 50% growth, 50% creator tax, 60% withholding, and a 36-month buffer matches: 9 months, about August 2027, MRR `$19,222`, W-2 net `$6,667/mo`. Those month names follow the script and the clock of this run. Lead Magnet Builder output for topic "side income", audience freelancer, goal list matches for the first 500 characters. Input tags, scripts, and JSON-LD blocks are byte-identical. The 28% and 30% helpers no longer call those defaults typical or common. The numbers stay 28 and 30.
 
 Inputs measure 45px, 46px, and 47px. Freelance "Load an example" is 44px. Lead Magnet buttons, once a result is showing, are 45px and 46px. Focus outline is 2px solid. Reduced motion sets the focused control transition to `none`. No horizontal overflow at 1440 or 390. Freelance input ink `#1A1714` on white is 17.85:1. axe still reports one serious color-contrast node at 3.29 where the UniConsent button has painted. One before desktop Quit shot did not include the widget in time. That is not a clean accessibility pass.
+
+## Closeout
+
+- Homepage before and after, 1440: `/opt/cursor/artifacts/phase4-close-home-before-1440.png`, `/opt/cursor/artifacts/phase4-close-home-after-1440.png`
+- Homepage after, 390: `/opt/cursor/artifacts/phase4-close-home-after-390.png`
+- Blog after, 1440 and 390: `/opt/cursor/artifacts/phase4-close-blog-after-1440.png`, `/opt/cursor/artifacts/phase4-close-blog-after-390.png`
+- Robinhood after, 1440 and 390: `/opt/cursor/artifacts/phase4-close-robin-after-1440.png`, `/opt/cursor/artifacts/phase4-close-robin-after-390.png`
+
+Numbers: `phase4/closeout-results.json`. The matrix is `phase4/closeout-matrix.md`. JSON-LD: `phase4/jsonld-inventory.md`.
+
+Homepage headline, font, 86.4px size, and `#1A1714` color match before and after at 1440. Robinhood's byline reads Used. axe still reports the UniConsent button at 3.29 where it paints. Not a clean accessibility pass.

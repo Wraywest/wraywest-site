@@ -84,6 +84,9 @@ check( 'wise stays used', ww_p4_use_label( 'wise-international-money-transfers' 
 check( 'klarna stays used', ww_p4_use_label( 'klarna-review' )['text'] === 'Used' );
 check( 'olsp label is affiliate receipts', ww_p4_use_label( 'olsp-system-review-2026' )['text'] === 'Affiliate receipts' );
 check( 'kit review stays researched', ww_p4_use_label( 'convertkit-review-email-marketing-creators' )['text'] === 'Researched' );
+check( 'robinhood stays used', ww_p4_use_label( 'robinhood-review' )['text'] === 'Used' );
+check( 'dataforseo stays used', ww_p4_use_label( 'dataforseo-review' )['text'] === 'Used' );
+check( 'repurpose stays researched', ww_p4_use_label( 'repurpose-io-content-automation' )['text'] === 'Researched' );
 
 file_put_contents( __DIR__ . '/fixtures/after-welcome.html', str_replace( 'css/before.css', 'css/after.css', $once ) );
 file_put_contents( __DIR__ . '/fixtures/after-review.html', $rout );

@@ -21,14 +21,14 @@ if ( ! function_exists( 'ww_p4_use_label' ) ) {
 			'hostinger-horizons-review-ai-website-builder' => 'Used',
 			'klarna-review'                             => 'Used',
 			'wise-international-money-transfers'        => 'Used',
+			'robinhood-review'                          => 'Used',
+			'dataforseo-review'                         => 'Used',
 		);
 		$researched = array(
 			'convertkit-review-email-marketing-creators' => 'Researched',
 			'convertkit-alternatives'                    => 'Researched',
 			'notion-review-creator-workspace-2026'       => 'Researched',
 			'repurpose-io-content-automation'            => 'Researched',
-			'robinhood-review'                           => 'Researched',
-			'dataforseo-review'                          => 'Researched',
 		);
 		if ( isset( $used[ $slug ] ) ) {
 			return array( 'key' => 'used', 'text' => $used[ $slug ] );
