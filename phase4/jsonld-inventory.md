@@ -1,12 +1,20 @@
 # JSON-LD inventory of the captured corpus
 
-Read-only. 58 captured HTML files. Not a WordPress boot. Nothing was deleted. The generator is `phase4/inventory-jsonld.py`. The full list is `phase4/jsonld-inventory.json`.
+Read-only. 63 captured HTML files, one per row of the 7 Nov 2026 scoreboard. Not a WordPress boot. Nothing was deleted. Legal page text was not edited. The generator is `phase4/inventory-jsonld.py`. The full list is `phase4/jsonld-inventory.json`.
 
-119 `application/ld+json` scripts:
+The five URLs that were missing from the earlier capture were fetched read-only on 8 Nov 2026, each HTTP 200: `/author/dwayne/`, `/legal/`, `/privacy-policy/`, `/terms-of-service/`, `/scoring-methodology/`.
 
-- 58 Rank Math head graphs (`class="rank-math-schema"`, before `</head>`).
+124 `application/ld+json` scripts:
+
+- 63 Rank Math head graphs (`class="rank-math-schema"`, before `</head>`).
 - 60 in-content scripts (after `</head>`, no Rank Math class).
 - 1 other head script: an `ItemList` on the captured Tools page. It has no `rank-math-schema` class. This repo does not contain the file that prints it.
+
+The five new pages:
+
+- Author: Rank Math head only. Types include Person, WebSite, BreadcrumbList, ProfilePage. 2426 bytes.
+- Legal, privacy, and terms: Rank Math head only. Organization, WebSite, BreadcrumbList, WebPage. No in-content script. Page text was not changed.
+- Scoring methodology: Rank Math head only. No in-content script. The rewrite of the "30 days of real use" sentence is not this cluster and was not done.
 
 In-content types that the direction note wants inside Rank Math, still outside it in these captures:
 
@@ -29,9 +37,9 @@ The Review and FAQPage blocks are not in any PHP file in this repo. They were no
 
 The captured `blog_dataforseo-review.html` has the Rank Math head graph only. No in-content Review and no FAQPage script. The HTML does contain a visible "Frequently asked questions" section. Adding an FAQPage block would be a new emitter. It was not added.
 
-## Not in this corpus
+## Coverage
 
-The scoreboard lists 63 URLs. These five were not in the capture, so they are not in the inventory: `/author/dwayne/`, `/legal/`, `/privacy-policy/`, `/terms-of-service/`, `/scoring-methodology/`.
+63 of 63 scoreboard URLs now have a captured file and an inventory row. No scoreboard URL is missing.
 
 ## Rank Math-only checklist, unresolved
 

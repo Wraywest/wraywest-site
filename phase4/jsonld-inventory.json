@@ -1,10 +1,10 @@
 {
   "capturedHtmlFixture": true,
   "wordpressBoot": false,
-  "pages": 58,
-  "scripts": 119,
+  "pages": 63,
+  "scripts": 124,
   "where": {
-    "rankmath-head": 58,
+    "rankmath-head": 63,
     "in-content": 60,
     "head-other": 1
   },
@@ -128,6 +128,29 @@
             "Answer"
           ],
           "bytes": 1406
+        }
+      ]
+    },
+    {
+      "file": "author-dwayne.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ProfilePage",
+            "Person",
+            "ImageObject"
+          ],
+          "bytes": 2426
         }
       ]
     },
@@ -2399,6 +2422,54 @@
       ]
     },
     {
+      "file": "legal.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2249
+        }
+      ]
+    },
+    {
+      "file": "privacy-policy.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2302
+        }
+      ]
+    },
+    {
       "file": "quit-9-to-5-calculator.html",
       "scripts": 3,
       "byWhere": {
@@ -2494,6 +2565,30 @@
       ]
     },
     {
+      "file": "scoring-methodology.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2402
+        }
+      ]
+    },
+    {
       "file": "start-here.html",
       "scripts": 2,
       "byWhere": {
@@ -2538,6 +2633,30 @@
             "Answer"
           ],
           "bytes": 2882
+        }
+      ]
+    },
+    {
+      "file": "terms-of-service.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2316
         }
       ]
     },
