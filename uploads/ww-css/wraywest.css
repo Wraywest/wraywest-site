@@ -4179,3 +4179,48 @@ html body .ww-p4-case > summary:focus-visible {
   html body .sh-btn,
   html body .fw-btn { transition: none !important; }
 }
+
+/* Phase 4 Tools, Resources, About, Contact. Header band ends before the page.
+   Dek stays ink. Existing next-step links get a 44px target. Forms, the
+   portrait, and #wwl-h are not restyled. No transition: all is added. */
+html body.page-id-103 .ww-site-hero.ww-site-hero,
+html body.page-id-104 .ww-site-hero.ww-site-hero,
+html body.page-id-105 .ww-site-hero.ww-site-hero,
+html body.page-id-107 .ww-site-hero.ww-site-hero {
+  border-bottom: 1px solid #E6CFA8 !important;
+  margin-bottom: var(--w38-gap) !important;
+}
+html body.page-id-103 .ww-site-hero-sub:not(#ww-x#ww-y),
+html body.page-id-104 .ww-site-hero-sub:not(#ww-x#ww-y),
+html body.page-id-105 .ww-site-hero-sub:not(#ww-x#ww-y),
+html body.page-id-107 .ww-site-hero-sub:not(#ww-x#ww-y) {
+  color: #3D3732 !important;
+  -webkit-text-fill-color: #3D3732 !important;
+}
+@media (max-width: 700px) {
+  html body.page-id-103 .ww-site-hero.ww-site-hero,
+  html body.page-id-104 .ww-site-hero.ww-site-hero,
+  html body.page-id-105 .ww-site-hero.ww-site-hero,
+  html body.page-id-107 .ww-site-hero.ww-site-hero {
+    margin-bottom: 28px !important;
+  }
+}
+html body.page-id-103 .ab-cta-btn,
+html body.page-id-107 .rs-fw-link,
+html body.page-id-105 .ti-link {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html body.page-id-103 .ab-cta-btn:focus-visible,
+html body.page-id-104 .ww-contact-form button[type=submit]:focus-visible,
+html body.page-id-105 .ti-link:focus-visible,
+html body.page-id-107 a:focus-visible {
+  outline: 2px solid #7D4A17 !important;
+  outline-offset: 3px !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html body.page-id-105 .ti-row,
+  html body.page-id-105 .ti-link span,
+  html body.page-id-107 .rs-card,
+  html body.page-id-103 .ab-cta-btn { transition: none !important; }
+}

@@ -28,6 +28,34 @@ The publication blocker stays as measured on 8 Nov 2026: the live homepage HTML 
 - The 42 post captures still pass the receipt and JSON-LD regression, and the Start Here and Engine transforms do not change those posts.
 - The 15 style ids are still absent from the live homepage capture.
 
+## Tools, Resources, About, Contact
+
+Add these URLs to the read-only fetch list:
+
+- `https://wraywestblog.com/tools/`
+- `https://wraywestblog.com/resources/`
+- `https://wraywestblog.com/about/`
+- `https://wraywestblog.com/contact/`
+
+Also run `php phase4/verify-four-pages.php`.
+
+- Tools labels: ConvertKit, Notion, and Repurpose.io say Researched. Make.com stays Researched. The other eight "Used hands-on" labels stay. Used-hands-on count on the captured tools page goes from 11 to 8.
+- `$17.77` count on Tools is unchanged. Tools forms and JSON-LD blocks are byte-identical.
+- No `rel="sponsored"` value is added or removed on Tools. The Resources Kit link stays `rel="noopener"` with no sponsored token. Resources sponsored-token count is unchanged.
+- Resources still contains "I have not used Make hands-on". No new n8n sentence is added.
+- About and Contact still reference `dwayne-kitchen-line.webp`. Their HTML is not rewritten by the tools or post transform. The contact form bytes match the capture.
+- Homepage headline is still "A second income, built after the shift."
+- The 42 post captures still pass the receipt and JSON-LD regression, and the tools transform does not change those posts.
+- The 15 style ids are still absent. The manifest md5 map is still the October capture.
+
+## UniConsent, read-only
+
+The captured pages load `https://cmp.uniconsent.com/v2/cmp.js`. The license attribute is already in the public HTML. There is no consent stylesheet or banner markup in this repo. The dashboard belongs to Dwayne.
+
+axe WCAG 2 A/AA reports one serious `color-contrast` node on Tools, Resources, About, and Contact, before and after this unit. The failing control is a UniConsent button (`unic-bar-sheet__btn`, classes include `bg-gray-300` and `text-gray-800`). Measured colors on that node are foreground `#ffffff` and background `#4a90e2`, contrast 3.29, below the 4.5:1 expected for 14px normal text. The separate "Opt out personal data" button measured `#333333` on `#e2e8f0` (10.25) and is not the failing node. At 390 the same panel covers the first content under the hero, including the Tools calculators and the Contact portrait.
+
+A repo CSS rule could recolor that button. It would not accept consent and it would not change the UniConsent dashboard. It is not a safe fix to ship from this change-set: the widget's own stylesheet can beat it, and shrinking or hiding the panel would change whether the choice is seen. No consent CSS was added. No consent button was clicked. This is not a clean accessibility pass.
+
 ## Fail conditions
 
 - Any new public URL, offer, or receipt figure.

@@ -119,6 +119,36 @@ if ( ! function_exists( 'ww_p4_transform_blog_index_html' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ww_p4_transform_tools_html' ) ) {
+	/**
+	 * Tools index labels only. Kit, Notion, and Repurpose.io are researched.
+	 * Make.com stays Researched. Other Used hands-on labels stay. No link rel
+	 * is changed. The deck form is not rewritten.
+	 */
+	function ww_p4_transform_tools_html( $html ) {
+		if ( ! is_string( $html ) || false === strpos( $html, 'class="ti-row"' ) && false === strpos( $html, 'class="ti-name"' ) ) {
+			return $html;
+		}
+		if ( preg_match( '/<body[^>]*\bsingle-post\b/', $html ) || false === strpos( $html, 'page-id-105' ) ) {
+			return $html;
+		}
+		$swaps = array(
+			'>ConvertKit</h4><p class="ti-meta">Email Marketing <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-used">Used hands-on</span></p>'
+				=> '>ConvertKit</h4><p class="ti-meta">Email Marketing <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Researched</span></p>',
+			'>Notion</h4><p class="ti-meta">Productivity <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-used">Used hands-on</span></p>'
+				=> '>Notion</h4><p class="ti-meta">Productivity <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Researched</span></p>',
+			'>Repurpose.io</h4><p class="ti-meta">Content Automation <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-used">Used hands-on</span></p>'
+				=> '>Repurpose.io</h4><p class="ti-meta">Content Automation <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Researched</span></p>',
+		);
+		foreach ( $swaps as $from => $to ) {
+			if ( false !== strpos( $html, $from ) ) {
+				$html = str_replace( $from, $to, $html );
+			}
+		}
+		return $html;
+	}
+}
+
 if ( ! function_exists( 'ww_p4_transform_start_here_html' ) ) {
 	/**
 	 * Start Here: the chef shift is told in the bio card only. The long
@@ -219,6 +249,10 @@ if ( defined( 'ABSPATH' ) ) {
 			}
 			if ( is_page( 'the-second-income-engine' ) ) {
 				ob_start( 'ww_p4_transform_engine_html' );
+				return;
+			}
+			if ( is_page( 'tools' ) ) {
+				ob_start( 'ww_p4_transform_tools_html' );
 			}
 		},
 		4
