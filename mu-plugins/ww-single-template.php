@@ -17,17 +17,16 @@ if ( ! function_exists( 'ww_p4_use_label' ) ) {
 		$slug = (string) $slug;
 		$used = array(
 			'leadsleap-review-honest-2026'              => 'Used',
-			'olsp-system-review-2026'                   => 'Used',
 			'systeme-io-review-all-in-one-platform'     => 'Used',
 			'hostinger-horizons-review-ai-website-builder' => 'Used',
 			'klarna-review'                             => 'Used',
+			'wise-international-money-transfers'        => 'Used',
 		);
 		$researched = array(
 			'convertkit-review-email-marketing-creators' => 'Researched',
 			'convertkit-alternatives'                    => 'Researched',
 			'notion-review-creator-workspace-2026'       => 'Researched',
 			'repurpose-io-content-automation'            => 'Researched',
-			'wise-international-money-transfers'         => 'Researched',
 			'robinhood-review'                           => 'Researched',
 			'dataforseo-review'                          => 'Researched',
 		);
@@ -36,6 +35,9 @@ if ( ! function_exists( 'ww_p4_use_label' ) ) {
 		}
 		if ( isset( $researched[ $slug ] ) ) {
 			return array( 'key' => 'researched', 'text' => $researched[ $slug ] );
+		}
+		if ( 'olsp-system-review-2026' === $slug ) {
+			return array( 'key' => 'receipts', 'text' => 'Affiliate receipts' );
 		}
 		if ( 'systeme-vs-convertkit' === $slug ) {
 			return array( 'key' => 'mixed', 'text' => 'Systeme used, Kit researched' );

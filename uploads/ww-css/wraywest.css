@@ -4224,3 +4224,42 @@ html body.page-id-107 a:focus-visible {
   html body.page-id-107 .rs-card,
   html body.page-id-103 .ab-cta-btn { transition: none !important; }
 }
+
+/* Phase 4 calculators. Inputs, defaults, and scripts are not restyled into
+   new math. Controls get a 44px target. No transition: all is added. */
+html body.page-id-2302 .qcalc-hero-sub:not(#ww-x#ww-y),
+html body.page-id-2936 .lmb-hero-sub:not(#ww-x#ww-y),
+html body.page-id-3456 .frc-hero p:not(#ww-x#ww-y) {
+  color: #3D3732 !important;
+  -webkit-text-fill-color: #3D3732 !important;
+}
+html body.page-id-3456 .frc-hero {
+  border-bottom: 1px solid #E6CFA8;
+  margin-bottom: 28px;
+  padding-bottom: 8px;
+}
+html body.page-id-2302 #qcalc-form input,
+html body.page-id-3456 .frc-input input,
+html body.page-id-3456 .frc-btn,
+html body.page-id-2936 #lmb-topic,
+html body.page-id-2936 #lmb-audience,
+html body.page-id-2936 #lmb-goal,
+html body.page-id-2936 .lmb-btn {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html body.page-id-2302 #qcalc-form input:focus-visible,
+html body.page-id-3456 .frc-input input:focus-visible,
+html body.page-id-3456 .frc-btn:focus-visible,
+html body.page-id-2936 #lmb-topic:focus-visible,
+html body.page-id-2936 #lmb-audience:focus-visible,
+html body.page-id-2936 #lmb-goal:focus-visible,
+html body.page-id-2936 .lmb-btn:focus-visible {
+  outline: 2px solid #7D4A17 !important;
+  outline-offset: 3px !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html body.page-id-2302 #qcalc-form input,
+  html body.page-id-3456 .frc-btn,
+  html body.page-id-2936 .lmb-btn { transition: none !important; }
+}

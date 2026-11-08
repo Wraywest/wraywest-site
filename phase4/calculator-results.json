@@ -1,0 +1,440 @@
+{
+  "capturedHtmlFixture": true,
+  "wordpressBoot": false,
+  "formsSubmitted": false,
+  "pages": {
+    "quit-before-1440": {
+      "measure": {
+        "h1": "Quit My 9-to-5 Calculator",
+        "h1size": "60.8px",
+        "overflow": false,
+        "controlH": 45,
+        "controlColor": "#1a1714"
+      },
+      "violations": []
+    },
+    "quit-before-390": {
+      "measure": {
+        "h1": "Quit My 9-to-5 Calculator",
+        "h1size": "38.4px",
+        "overflow": false,
+        "controlH": 45,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "quit-after-1440": {
+      "measure": {
+        "h1": "Quit My 9-to-5 Calculator",
+        "h1size": "60.8px",
+        "overflow": false,
+        "controlH": 45,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "quit-after-390": {
+      "measure": {
+        "h1": "Quit My 9-to-5 Calculator",
+        "h1size": "38.4px",
+        "overflow": false,
+        "controlH": 45,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "rate-before-1440": {
+      "measure": {
+        "h1": "Free Freelance Rate Calculator",
+        "h1size": "48px",
+        "overflow": false,
+        "controlH": 46,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "rate-before-390": {
+      "measure": {
+        "h1": "Free Freelance Rate Calculator",
+        "h1size": "32px",
+        "overflow": false,
+        "controlH": 46,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "rate-after-1440": {
+      "measure": {
+        "h1": "Free Freelance Rate Calculator",
+        "h1size": "48px",
+        "overflow": false,
+        "controlH": 46,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "rate-after-390": {
+      "measure": {
+        "h1": "Free Freelance Rate Calculator",
+        "h1size": "32px",
+        "overflow": false,
+        "controlH": 46,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "lmb-before-1440": {
+      "measure": {
+        "h1": "Lead Magnet Builder",
+        "h1size": "48px",
+        "overflow": false,
+        "controlH": 47,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "lmb-before-390": {
+      "measure": {
+        "h1": "Lead Magnet Builder",
+        "h1size": "32px",
+        "overflow": false,
+        "controlH": 47,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "lmb-after-1440": {
+      "measure": {
+        "h1": "Lead Magnet Builder",
+        "h1size": "48px",
+        "overflow": false,
+        "controlH": 47,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    },
+    "lmb-after-390": {
+      "measure": {
+        "h1": "Lead Magnet Builder",
+        "h1size": "32px",
+        "overflow": false,
+        "controlH": 47,
+        "controlColor": "#1a1714"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin",
+          "ratio": 3.29
+        }
+      ]
+    }
+  },
+  "cases": {
+    "rate": {
+      "defaults": {
+        "equal": true,
+        "before": {
+          "rate": "$82/hr",
+          "gross": "$94,286",
+          "billable": "1,150",
+          "day": "$656"
+        },
+        "after": {
+          "rate": "$82/hr",
+          "gross": "$94,286",
+          "billable": "1,150",
+          "day": "$656"
+        }
+      },
+      "zero": {
+        "equal": true,
+        "before": {
+          "rate": "$0/hr",
+          "gross": "$0",
+          "billable": "52",
+          "day": "$0",
+          "values": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "after": {
+          "rate": "$0/hr",
+          "gross": "$0",
+          "billable": "52",
+          "day": "$0",
+          "values": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "boundary": {
+        "equal": true,
+        "before": {
+          "rate": "$150,000/hr",
+          "gross": "$300,000",
+          "billable": "2",
+          "day": "$1,200,000",
+          "values": [
+            "60000",
+            "1",
+            "50",
+            "0",
+            "80"
+          ]
+        },
+        "after": {
+          "rate": "$150,000/hr",
+          "gross": "$300,000",
+          "billable": "2",
+          "day": "$1,200,000",
+          "values": [
+            "60000",
+            "1",
+            "50",
+            "0",
+            "80"
+          ]
+        }
+      },
+      "example": {
+        "equal": true,
+        "before": {
+          "rate": "$135/hr",
+          "values": [
+            "80000",
+            "22",
+            "8",
+            "9000",
+            "32"
+          ]
+        },
+        "after": {
+          "rate": "$135/hr",
+          "values": [
+            "80000",
+            "22",
+            "8",
+            "9000",
+            "32"
+          ]
+        }
+      }
+    },
+    "quit": {
+      "defaults": {
+        "equal": true,
+        "before": "You can quit your 9-to-5 in 4y 5mo around April 2031 Creator MRR at quit (gross) $6,637 Today's W-2 net $4,500/mo Months to target 53 Share on X on LinkedIn Copy permalink Embed on your site",
+        "after": "You can quit your 9-to-5 in 4y 5mo around April 2031 Creator MRR at quit (gross) $6,637 Today's W-2 net $4,500/mo Months to target 53 Share on X on LinkedIn Copy permalink Embed on your site"
+      },
+      "zero": {
+        "equal": true,
+        "before": {
+          "text": "Add a starting creator income Even $50/month with steady growth produces a meaningful exit projection. Try entering your current creator earnings, even if small.",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "after": {
+          "text": "Add a starting creator income Even $50/month with steady growth produces a meaningful exit projection. Try entering your current creator earnings, even if small.",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      },
+      "boundary": {
+        "equal": true,
+        "before": {
+          "text": "Add a starting creator income Even $50/month with steady growth produces a meaningful exit projection. Try entering your current creator earnings, even if small.",
+          "values": [
+            "200000",
+            "60",
+            "0",
+            "50",
+            "50",
+            "10000",
+            "36",
+            "0"
+          ]
+        },
+        "after": {
+          "text": "Add a starting creator income Even $50/month with steady growth produces a meaningful exit projection. Try entering your current creator earnings, even if small.",
+          "values": [
+            "200000",
+            "60",
+            "0",
+            "50",
+            "50",
+            "10000",
+            "36",
+            "0"
+          ]
+        }
+      },
+      "boundaryMath": {
+        "equal": true,
+        "inputs": {
+          "qc-w2": 200000,
+          "qc-wh": 60,
+          "qc-mrr": 500,
+          "qc-g": 50,
+          "qc-ct": 50,
+          "qc-exp": 10000,
+          "qc-bm": 36,
+          "qc-s": 0
+        },
+        "text": "You can quit your 9-to-5 in 9 months around August 2027 Creator MRR at quit (gross) $19,222 Today's W-2 net $6,667/mo Months to target 9 Share on X on LinkedIn Copy permalink Embed on your site",
+        "note": "Same string before and after in this run. The month label follows the page script and the clock of the run."
+      }
+    },
+    "lmb": {
+      "normal": {
+        "equal": true,
+        "before": {
+          "topic": "side income",
+          "audience": "freelancer",
+          "goal": "list",
+          "text": "3 Title Variants: pick your favorite 10 Things to Audit on Your side income Page Before You Push Traffic The 10-Step side income Email-List Growth Checklist The freelancers and consultants's Checklist for Turning side income Readers Into Subscribers (10 items) Most \"grow your email list\" advice is about traffic. This isn't. This 10-item checklist is about converting the traffic you already have on side income - the visitors who showed up, scrolled, and left without subscribing. Phase 1 \u00b7 Setup M"
+        },
+        "after": {
+          "topic": "side income",
+          "audience": "freelancer",
+          "goal": "list",
+          "text": "3 Title Variants: pick your favorite 10 Things to Audit on Your side income Page Before You Push Traffic The 10-Step side income Email-List Growth Checklist The freelancers and consultants's Checklist for Turning side income Readers Into Subscribers (10 items) Most \"grow your email list\" advice is about traffic. This isn't. This 10-item checklist is about converting the traffic you already have on side income - the visitors who showed up, scrolled, and left without subscribing. Phase 1 \u00b7 Setup M"
+        }
+      }
+    }
+  },
+  "focus": {
+    "quit": {
+      "h": 45,
+      "outline": "solid",
+      "width": "2px",
+      "transition": "none"
+    },
+    "rate": {
+      "h": 46,
+      "outline": "solid",
+      "width": "2px",
+      "transition": "none"
+    },
+    "lmb": {
+      "h": 47,
+      "outline": "solid",
+      "width": "2px",
+      "transition": "none"
+    }
+  },
+  "rateInputContrast": 17.85,
+  "buttons": {
+    "frc-example": 44,
+    "lmb-copy": 45,
+    "lmb-pdf": 45,
+    "lmb-email": 46,
+    "lmb-selects": 44
+  }
+}

@@ -39,7 +39,7 @@ Add these URLs to the read-only fetch list:
 
 Also run `php phase4/verify-four-pages.php`.
 
-- Tools labels: ConvertKit, Notion, and Repurpose.io say Researched. Make.com stays Researched. The other eight "Used hands-on" labels stay. Used-hands-on count on the captured tools page goes from 11 to 8.
+- Tools labels: ConvertKit, Notion, and Repurpose.io say Researched. Make.com stays Researched. OLSP System says Affiliate receipts. Wise and Klarna stay Used hands-on. Used-hands-on count on the captured tools page goes from 11 to 7.
 - `$17.77` count on Tools is unchanged. Tools forms and JSON-LD blocks are byte-identical.
 - No `rel="sponsored"` value is added or removed on Tools. The Resources Kit link stays `rel="noopener"` with no sponsored token. Resources sponsored-token count is unchanged.
 - Resources still contains "I have not used Make hands-on". No new n8n sentence is added.
@@ -47,6 +47,22 @@ Also run `php phase4/verify-four-pages.php`.
 - Homepage headline is still "A second income, built after the shift."
 - The 42 post captures still pass the receipt and JSON-LD regression, and the tools transform does not change those posts.
 - The 15 style ids are still absent. The manifest md5 map is still the October capture.
+
+## Calculators
+
+Add these URLs to the read-only fetch list:
+
+- `https://wraywestblog.com/tools/quit-9-to-5-calculator/`
+- `https://wraywestblog.com/tools/freelance-rate-calculator/`
+- `https://wraywestblog.com/tools/lead-magnet-builder/`
+
+Also run `php phase4/verify-calculators.php`.
+
+- Quit inputs stay `value="75000"`, `28`, `500`, `5`, `30`, `3500`, `6`, and `0`. The helper no longer says "typical for $75k". It still says "Default 28%".
+- Freelance inputs stay `60000`, `25`, `6`, `6000`, and `30`. The helper no longer says "a common starting point".
+- Every `<input>` tag and every `<script>` block on the three pages is byte-identical to the capture. JSON-LD blocks are byte-identical. The Lead Magnet Builder page HTML is byte-identical.
+- Running the captured script on the before and after files, without submitting a form, produces the same result text for the cases in `phase4/calculator-results.json`.
+- The CFPB sentence and the "3% = passive" growth scale stay. They were not given a new source.
 
 ## UniConsent, read-only
 

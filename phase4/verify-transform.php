@@ -45,7 +45,7 @@ $rout   = ww_p4_transform_post_html( $review );
 $r2     = ww_p4_transform_post_html( $rout );
 check( 'review idempotent', $rout === $r2 );
 check( 'review receipt exact', substr_count( $rout, 'The published figure stays exact: $810.95. LeadsLeap stays $17.77 when a post already prints it.' ) === 1 );
-check( 'review used label', strpos( $rout, 'data-ww-use="used"' ) !== false && strpos( $rout, '>Used<' ) !== false );
+check( 'review olsp label is affiliate receipts', strpos( $rout, 'data-ww-use="receipts"' ) !== false && strpos( $rout, '>Affiliate receipts<' ) !== false && strpos( $rout, 'data-ww-use="used"' ) === false );
 check( 'review topic tools', strpos( $rout, 'data-ww-topic="tools"' ) !== false );
 check( 'review one disclosure', substr_count( $rout, 'class="ww-disc"' ) === 1 );
 check( 'review disclosure kept', false !== strpos( $rout, 'Some links are affiliate links.' ) );
@@ -80,6 +80,10 @@ $cat_cap  = '<html><body class="archive category"><nav class="ww-cat-chips"><a c
 check( 'home not rewritten by post transform', ww_p4_transform_post_html( $home_cap ) === $home_cap );
 check( 'category not rewritten by post transform', ww_p4_transform_post_html( $cat_cap ) === $cat_cap );
 check( 'notion researched', ww_p4_use_label( 'notion-review-creator-workspace-2026' )['text'] === 'Researched' );
+check( 'wise stays used', ww_p4_use_label( 'wise-international-money-transfers' )['text'] === 'Used' );
+check( 'klarna stays used', ww_p4_use_label( 'klarna-review' )['text'] === 'Used' );
+check( 'olsp label is affiliate receipts', ww_p4_use_label( 'olsp-system-review-2026' )['text'] === 'Affiliate receipts' );
+check( 'kit review stays researched', ww_p4_use_label( 'convertkit-review-email-marketing-creators' )['text'] === 'Researched' );
 
 file_put_contents( __DIR__ . '/fixtures/after-welcome.html', str_replace( 'css/before.css', 'css/after.css', $once ) );
 file_put_contents( __DIR__ . '/fixtures/after-review.html', $rout );

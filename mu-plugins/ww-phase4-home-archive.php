@@ -122,8 +122,8 @@ if ( ! function_exists( 'ww_p4_transform_blog_index_html' ) ) {
 if ( ! function_exists( 'ww_p4_transform_tools_html' ) ) {
 	/**
 	 * Tools index labels only. Kit, Notion, and Repurpose.io are researched.
-	 * Make.com stays Researched. Other Used hands-on labels stay. No link rel
-	 * is changed. The deck form is not rewritten.
+	 * OLSP is affiliate receipts, not hands-on product use. Make.com stays
+	 * Researched. Wise and Klarna stay Used hands-on. No link rel is changed.
 	 */
 	function ww_p4_transform_tools_html( $html ) {
 		if ( ! is_string( $html ) || false === strpos( $html, 'class="ti-row"' ) && false === strpos( $html, 'class="ti-name"' ) ) {
@@ -139,6 +139,8 @@ if ( ! function_exists( 'ww_p4_transform_tools_html' ) ) {
 				=> '>Notion</h4><p class="ti-meta">Productivity <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Researched</span></p>',
 			'>Repurpose.io</h4><p class="ti-meta">Content Automation <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-used">Used hands-on</span></p>'
 				=> '>Repurpose.io</h4><p class="ti-meta">Content Automation <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Researched</span></p>',
+			'>OLSP System</h4><p class="ti-meta">Affiliate Training <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-used">Used hands-on</span></p>'
+				=> '>OLSP System</h4><p class="ti-meta">Affiliate Training <span class="ti-dot" aria-hidden="true">&middot;</span> <span class="ti-researched">Affiliate receipts</span></p>',
 		);
 		foreach ( $swaps as $from => $to ) {
 			if ( false !== strpos( $html, $from ) ) {
@@ -228,6 +230,52 @@ if ( ! function_exists( 'ww_p4_transform_engine_html' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ww_p4_transform_calculator_html' ) ) {
+	/**
+	 * Calculator pages: helper text only. Defaults, input attributes, scripts,
+	 * and WPForms markup stay byte-identical. Percent defaults are not given
+	 * a new source.
+	 */
+	function ww_p4_transform_calculator_html( $html ) {
+		if ( ! is_string( $html ) || preg_match( '/<body[^>]*\bsingle-post\b/', $html ) ) {
+			return $html;
+		}
+		$quit = false !== strpos( $html, 'page-id-2302' ) && false !== strpos( $html, 'id="qc-w2"' );
+		$rate = false !== strpos( $html, 'page-id-3456' ) && false !== strpos( $html, 'id="frc-take"' );
+		if ( ! $quit && ! $rate ) {
+			return $html;
+		}
+		$scripts = array();
+		$html    = preg_replace_callback(
+			'#<script\b[^>]*>.*?</script>#s',
+			function ( $m ) use ( &$scripts ) {
+				$key              = '%%WWP4SCRIPT' . count( $scripts ) . '%%';
+				$scripts[ $key ] = $m[0];
+				return $key;
+			},
+			$html
+		);
+		if ( $quit ) {
+			$html = str_replace(
+				'FICA + federal + state. Default 28% (typical for $75k W-2).',
+				'FICA + federal + state. Default 28%. Not a tax figure for your return.',
+				$html
+			);
+		}
+		if ( $rate ) {
+			$html = str_replace(
+				'Set aside for taxes and a margin. 30 percent is a common starting point.',
+				'Set aside for taxes and a margin. Default is 30 percent. Not a sourced tax rate.',
+				$html
+			);
+		}
+		foreach ( $scripts as $key => $script ) {
+			$html = str_replace( $key, $script, $html );
+		}
+		return $html;
+	}
+}
+
 if ( defined( 'ABSPATH' ) ) {
 	add_action(
 		'template_redirect',
@@ -253,6 +301,10 @@ if ( defined( 'ABSPATH' ) ) {
 			}
 			if ( is_page( 'tools' ) ) {
 				ob_start( 'ww_p4_transform_tools_html' );
+				return;
+			}
+			if ( is_page( array( 'quit-9-to-5-calculator', 'freelance-rate-calculator', 'lead-magnet-builder' ) ) ) {
+				ob_start( 'ww_p4_transform_calculator_html' );
 			}
 		},
 		4
