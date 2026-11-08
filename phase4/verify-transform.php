@@ -48,7 +48,9 @@ check( 'review receipt exact', substr_count( $rout, 'The published figure stays 
 check( 'review used label', strpos( $rout, 'data-ww-use="used"' ) !== false && strpos( $rout, '>Used<' ) !== false );
 check( 'review topic tools', strpos( $rout, 'data-ww-topic="tools"' ) !== false );
 check( 'review one disclosure', substr_count( $rout, 'class="ww-disc"' ) === 1 );
-check( 'review disclosure after toc', strpos( $rout, '</details><p class="ww-disc">' ) !== false );
+check( 'review disclosure kept', false !== strpos( $rout, 'Some links are affiliate links.' ) );
+check( 'review disclosure after toc', false !== strpos( $rout, '</details><p class="ww-disc">Some links are affiliate links.</p>' ) );
+check( 'review no invented disclosure', false === strpos( $rout, 'I may earn a commission' ) );
 check( 'review kit rel stripped', preg_match( '#<a href="https://kit.com/pricing"[^>]*sponsored#', $rout ) !== 1 && strpos( $rout, 'https://kit.com/pricing' ) !== false );
 check( 'review make rel kept', (bool) preg_match( '#<a href="https://www.make.com/en/pricing" rel="sponsored nofollow">#', $rout ) );
 check( 'review one end', substr_count( $rout, 'data-ww-p4="end"' ) === 1 );
@@ -64,10 +66,19 @@ $pout   = ww_p4_transform_post_html( $pillar );
 check( 'pillar does not link to itself as the next step', substr_count( $pout, 'https://wraywestblog.com/blog/email-marketing-playbook-solo-creators/' ) === 1 );
 check( 'pillar points at start here', strpos( $pout, 'https://wraywestblog.com/start-here/' ) !== false );
 
-check( 'make vs n8n label', ww_p4_use_label( 'make-vs-n8n-side-hustlers' )['text'] === 'n8n used, Make researched' );
+check( 'make vs n8n label', ww_p4_use_label( 'make-vs-n8n-side-hustlers' )['text'] === 'Some posts made with n8n; Make researched' );
+check( 'n8n post label is narrow', ww_p4_use_label( 'n8n-side-hustle-automation' )['text'] === 'Some posts made with n8n' );
 check( 'kit comparison label', ww_p4_use_label( 'systeme-vs-convertkit' )['text'] === 'Systeme used, Kit researched' );
 check( 'guide has no label', ww_p4_use_label( 'welcome-email-sequence-template' ) === null );
-check( 'n8n used', ww_p4_use_label( 'n8n-side-hustle-automation' )['text'] === 'Used' );
+$unclosed = '<html><head><link rel="canonical" href="https://wraywestblog.com/blog/olsp-system-review-2026/"></head><body class="single-post"><div class="entry-content"><p>The published figure stays exact: $810.95.</p><p class="ww-disc">Some links are affiliate links. Each review says whether I used the tool myself or researched it. <a href="https://wraywestblog.com/legal/">Full disclosure</a></p><a href="https://olspfunnels.com/megalink-2-front-end?olsp=965107" rel="sponsored noopener nofollow">OLSP</a></div><section class="ww-end"><p>Old pitch</p><section class="ww-related"><h2>Keep reading</h2><span class="ww-related-title">LeadsLeap Review (2026): I Made $17.77.</span></section></section><footer><a href="https://wraywestblog.com/legal/">Disclaimer</a></footer></body></html>';
+$uout = ww_p4_transform_post_html( $unclosed );
+check( 'unclosed end keeps related', false !== strpos( $uout, 'ww-related-title' ) && false !== strpos( $uout, '$17.77' ) );
+check( 'unclosed end keeps receipt', false !== strpos( $uout, '$810.95' ) );
+check( 'sponsored boilerplate kept', false !== strpos( $uout, 'Each review says whether I used the tool myself or researched it.' ) );
+$home_cap = '<html><body class="home"><h1 id="wwl-h">A second income, built after the shift.</h1></body></html>';
+$cat_cap  = '<html><body class="archive category"><nav class="ww-cat-chips"><a class="ww-chip" href="https://wraywestblog.com/blog/category/money-finance/">Money &amp; Finance</a></nav></body></html>';
+check( 'home not rewritten by post transform', ww_p4_transform_post_html( $home_cap ) === $home_cap );
+check( 'category not rewritten by post transform', ww_p4_transform_post_html( $cat_cap ) === $cat_cap );
 check( 'notion researched', ww_p4_use_label( 'notion-review-creator-workspace-2026' )['text'] === 'Researched' );
 
 file_put_contents( __DIR__ . '/fixtures/after-welcome.html', str_replace( 'css/before.css', 'css/after.css', $once ) );

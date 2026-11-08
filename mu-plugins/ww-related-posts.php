@@ -1,6 +1,6 @@
 <?php
 /* Plugin Name: WW Related Posts
- * Description: Adds a "Keep reading" block (3 related posts from the same category) + a subscribe nudge after single-post content, so articles don't dead-end. From the 2026-06 site audit (P2). Reversible: delete this file.
+ * Description: Adds a Keep reading block (3 posts from the same category) after single posts only. Not used on pages, the homepage, or archives. Reversible: delete this file.
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 

@@ -21,7 +21,6 @@ if ( ! function_exists( 'ww_p4_use_label' ) ) {
 			'systeme-io-review-all-in-one-platform'     => 'Used',
 			'hostinger-horizons-review-ai-website-builder' => 'Used',
 			'klarna-review'                             => 'Used',
-			'n8n-side-hustle-automation'                => 'Used',
 		);
 		$researched = array(
 			'convertkit-review-email-marketing-creators' => 'Researched',
@@ -42,7 +41,10 @@ if ( ! function_exists( 'ww_p4_use_label' ) ) {
 			return array( 'key' => 'mixed', 'text' => 'Systeme used, Kit researched' );
 		}
 		if ( 'make-vs-n8n-side-hustlers' === $slug ) {
-			return array( 'key' => 'mixed', 'text' => 'n8n used, Make researched' );
+			return array( 'key' => 'narrow', 'text' => 'Some posts made with n8n; Make researched' );
+		}
+		if ( 'n8n-side-hustle-automation' === $slug ) {
+			return array( 'key' => 'narrow', 'text' => 'Some posts made with n8n' );
 		}
 		return null;
 	}
@@ -321,20 +323,95 @@ if ( ! function_exists( 'ww_p4_has_sponsored_link' ) ) {
 	}
 }
 
-if ( ! function_exists( 'ww_p4_content_region' ) ) {
-	function ww_p4_content_region( $html ) {
-		$start = stripos( $html, 'entry-content' );
-		if ( false === $start ) {
-			return $html;
+if ( ! function_exists( 'ww_p4_entry_region' ) ) {
+	/**
+	 * The real entry-content element, not the first time the words appear in CSS.
+	 */
+	function ww_p4_entry_region( $html ) {
+		if ( ! preg_match( '/<div\b[^>]*\bclass=(["\'])[^"\']*\bentry-content\b[^"\']*\1[^>]*>/', $html, $m, PREG_OFFSET_CAPTURE ) ) {
+			return '';
 		}
-		$end = strlen( $html );
-		foreach ( array( 'ww-author-bio', 'ww-end', 'ww-related', 'entry-meta' ) as $marker ) {
-			$at = stripos( $html, $marker, $start + 12 );
+		$start = $m[0][1];
+		$end   = strlen( $html );
+		foreach ( array( 'class="ww-author-bio"', 'class="ww-end"', 'class="ww-related"' ) as $marker ) {
+			$at = stripos( $html, $marker, $start + 40 );
 			if ( false !== $at && $at < $end ) {
 				$end = $at;
 			}
 		}
 		return substr( $html, $start, $end - $start );
+	}
+}
+
+if ( ! function_exists( 'ww_p4_is_boilerplate_disclosure' ) ) {
+	function ww_p4_is_boilerplate_disclosure( $block ) {
+		$text = trim( preg_replace( '/\s+/', ' ', html_entity_decode( strip_tags( $block ), ENT_QUOTES, 'UTF-8' ) ) );
+		return 'Some links are affiliate links. Each review says whether I used the tool myself or researched it. Full disclosure' === $text;
+	}
+}
+
+if ( ! function_exists( 'ww_p4_place_disclosure' ) ) {
+	/**
+	 * Keep the post's own disclosure sentence. Move it to after the TOC when
+	 * the entry has a rel=sponsored link. Remove only the sitewide boilerplate
+	 * when no such link remains, and only if /legal/ is still on the page.
+	 */
+	function ww_p4_place_disclosure( $html ) {
+		$span = ww_p4_find_class( $html, 'ww-disc' );
+		if ( ! $span ) {
+			return $html;
+		}
+		$block     = substr( $html, $span[0], $span[1] - $span[0] );
+		$sponsored = ww_p4_has_sponsored_link( ww_p4_entry_region( $html ) );
+		if ( ! $sponsored ) {
+			if ( ! ww_p4_is_boilerplate_disclosure( $block ) ) {
+				return $html;
+			}
+			$rest = substr( $html, 0, $span[0] ) . substr( $html, $span[1] );
+			if ( false === stripos( $rest, '/legal/' ) ) {
+				return $html;
+			}
+			return $rest;
+		}
+		$toc = ww_p4_find_class( $html, 'ww-toc' );
+		if ( ! $toc || $span[0] > $toc[1] ) {
+			return $html;
+		}
+		$html = substr( $html, 0, $span[0] ) . substr( $html, $span[1] );
+		$toc  = ww_p4_find_class( $html, 'ww-toc' );
+		if ( ! $toc ) {
+			return $html . $block;
+		}
+		return substr( $html, 0, $toc[1] ) . $block . substr( $html, $toc[1] );
+	}
+}
+
+if ( ! function_exists( 'ww_p4_remove_end_sections' ) ) {
+	/**
+	 * Drop the old end-module section. If it was left unclosed, stop at the
+	 * next section so related posts are not swallowed.
+	 */
+	function ww_p4_remove_end_sections( $html ) {
+		$guard = 0;
+		while ( $guard < 6 ) {
+			$guard++;
+			if ( ! preg_match( '/<section\b[^>]*\bclass=(["\'])[^"\']*\bww-end\b[^"\']*\1[^>]*>/', $html, $m, PREG_OFFSET_CAPTURE ) ) {
+				break;
+			}
+			$start = $m[0][1];
+			$after = $start + strlen( $m[0][0] );
+			$next  = stripos( $html, '<section', $after );
+			$close = stripos( $html, '</section>', $after );
+			if ( false !== $next && ( false === $close || $next < $close ) ) {
+				$end = $next;
+			} elseif ( false !== $close ) {
+				$end = $close + strlen( '</section>' );
+			} else {
+				break;
+			}
+			$html = substr( $html, 0, $start ) . substr( $html, $end );
+		}
+		return $html;
 	}
 }
 
@@ -371,11 +448,16 @@ if ( ! function_exists( 'ww_p4_end_html' ) ) {
 }
 
 if ( ! function_exists( 'ww_p4_author_html' ) ) {
-	function ww_p4_author_html( $picture ) {
+	function ww_p4_author_html( $picture, $receipt_paras = array() ) {
 		$media = $picture ? '<div class="ww-author-media">' . $picture . '</div>' : '';
+		$extra = '';
+		foreach ( $receipt_paras as $para ) {
+			$extra .= $para;
+		}
 		return '<div class="ww-author-bio ww-author-short">' . $media
 			. '<div class="ww-author-copy"><p class="ww-author-name">Dwayne Lindsay</p>'
 			. '<p>I work the 6:30 AM to 3:00 PM shift and write about what actually works around it.</p>'
+			. $extra
 			. '<p><a href="https://wraywestblog.com/about/">About</a></p></div></div>';
 	}
 }
@@ -489,21 +571,7 @@ if ( ! function_exists( 'ww_p4_transform_post_html' ) ) {
 		}
 
 		$html = ww_p4_strip_kit_sponsored( $html );
-		$sponsored = ww_p4_has_sponsored_link( ww_p4_content_region( $html ) );
-		$html = ww_p4_remove_class( $html, 'ww-disc' );
-		if ( $sponsored ) {
-			$disc = ww_p4_disclosure_html();
-			$toc  = ww_p4_find_class( $html, 'ww-toc' );
-			if ( $toc ) {
-				$html = substr( $html, 0, $toc[1] ) . $disc . substr( $html, $toc[1] );
-			} else {
-				$at = stripos( $html, 'entry-content' );
-				$gt = false === $at ? false : strpos( $html, '>', $at );
-				if ( false !== $gt ) {
-					$html = substr( $html, 0, $gt + 1 ) . $disc . substr( $html, $gt + 1 );
-				}
-			}
-		}
+		$html = ww_p4_place_disclosure( $html );
 
 		$slug  = ww_p4_slug_from_html( $html );
 		$label = ww_p4_use_label( $slug );
@@ -521,12 +589,20 @@ if ( ! function_exists( 'ww_p4_transform_post_html' ) ) {
 				} elseif ( preg_match( '#<img\b[^>]*>#', $block, $img ) ) {
 					$picture = $img[0];
 				}
-				$html = substr( $html, 0, $author[0] ) . ww_p4_author_html( $picture ) . substr( $html, $author[1] );
+				$receipts = array();
+				if ( preg_match_all( '#<p\b[^>]*>.*?</p>#s', $block, $paras ) ) {
+					foreach ( $paras[0] as $para ) {
+						if ( false !== strpos( $para, '$810.95' ) || false !== strpos( $para, '$17.77' ) || false !== strpos( $para, '17.77' ) ) {
+							$receipts[] = $para;
+						}
+					}
+				}
+				$html = substr( $html, 0, $author[0] ) . ww_p4_author_html( $picture, $receipts ) . substr( $html, $author[1] );
 			}
 		}
 
 		$html = ww_p4_remove_class( $html, 'ww-related-cta' );
-		$html = ww_p4_remove_class( $html, 'ww-end' );
+		$html = ww_p4_remove_end_sections( $html );
 		$end  = ww_p4_end_html( $slug );
 		if ( '' !== $end ) {
 			$related = ww_p4_find_class( $html, 'ww-related' );

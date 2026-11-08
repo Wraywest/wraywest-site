@@ -4098,3 +4098,42 @@ html body.single-post .ww-related-cta { display: none !important; }
     padding: 32px 20px 20px !important;
   }
 }
+
+/* Phase 4 archives. Does not restyle #wwl-h. Chip row wraps. Category pages
+   already print both an updated time and a published time; the words name them.
+   The chip nav is duplicated on every category card and was display:none.
+   Show the first one. */
+@media (max-width: 480px) {
+  html body.v37 .vb-chips {
+    flex-wrap: wrap !important;
+    overflow: visible !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+}
+html body.v37 a.vb-chip,
+html body.archive article:first-of-type .ww-cat-chips .ww-chip {
+  min-height: 44px !important;
+  box-sizing: border-box;
+}
+html body.v37 a.vb-chip:focus-visible,
+html body.archive .ww-chip:focus-visible {
+  outline: 2px solid #7D4A17 !important;
+  outline-offset: 3px !important;
+}
+html body.archive nav.ww-cat-chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  overflow: visible !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+}
+html body.archive article ~ article nav.ww-cat-chips {
+  display: none !important;
+}
+html body.archive .posted-on time.updated::before { content: "Updated "; }
+html body.archive .posted-on time.published::before { content: "Published "; }
+@media (prefers-reduced-motion: reduce) {
+  html body.v37 .vb-chip,
+  html body.archive .ww-chip { transition: none !important; }
+}
