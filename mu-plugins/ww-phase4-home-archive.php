@@ -119,6 +119,85 @@ if ( ! function_exists( 'ww_p4_transform_blog_index_html' ) ) {
 	}
 }
 
+if ( ! function_exists( 'ww_p4_transform_start_here_html' ) ) {
+	/**
+	 * Start Here: the chef shift is told in the bio card only. The long
+	 * "six posts" block stays in the page, folded, so every existing link
+	 * remains. One in-page link points at the path quiz. The deck form is
+	 * not rewritten.
+	 */
+	function ww_p4_transform_start_here_html( $html ) {
+		if ( ! is_string( $html ) || false === strpos( $html, 'class="sh-tldr"' ) ) {
+			return $html;
+		}
+		if ( preg_match( '/<body[^>]*\bsingle-post\b/', $html ) ) {
+			return $html;
+		}
+		$dup = 'I build WrayWest around a 6:30 AM to 3:00 PM kitchen shift. ';
+		if ( false !== strpos( $html, $dup ) ) {
+			$html = str_replace( $dup, '', $html );
+		}
+		if ( false === strpos( $html, 'id="sh-quiz"' ) ) {
+			$html = str_replace( '<section class="sh-quiz">', '<section class="sh-quiz" id="sh-quiz">', $html );
+		}
+		if ( false === strpos( $html, 'href="#sh-quiz"' ) ) {
+			$link = '<p class="sh-next"><a href="#sh-quiz">Which path fits you right now?</a></p>';
+			$html = str_replace( '</div></div></section><section class="sh-bio">', $link . '</div></div></section><section class="sh-bio">', $html );
+		}
+		if ( false === strpos( $html, 'ww-p4-folded' ) && function_exists( 'ww_p4_element_span' ) ) {
+			if ( preg_match( '/<section\b[^>]*class=(["\'])[^"\']*\bsh-featured\b[^"\']*\1[^>]*>/', $html, $m, PREG_OFFSET_CAPTURE ) ) {
+				$start = $m[0][1];
+				$span  = ww_p4_element_span( $html, $start );
+				if ( $span ) {
+					$block   = substr( $html, $span[0], $span[1] - $span[0] );
+					$wrapped = '<details class="ww-p4-folded"><summary>Six posts most readers start with</summary>' . $block . '</details>';
+					$html    = substr( $html, 0, $span[0] ) . $wrapped . substr( $html, $span[1] );
+				}
+			}
+		}
+		return $html;
+	}
+}
+
+if ( ! function_exists( 'ww_p4_transform_engine_html' ) ) {
+	/**
+	 * Engine: fold each existing "Picture this" case so the six pillars stay
+	 * reachable from the nav. Does not rewrite pillar copy, the Make.com line,
+	 * the deck form, or the FAQPage JSON-LD block.
+	 */
+	function ww_p4_transform_engine_html( $html ) {
+		if ( ! is_string( $html ) || false === strpos( $html, 'class="fw-tldr"' ) ) {
+			return $html;
+		}
+		if ( preg_match( '/<body[^>]*\bsingle-post\b/', $html ) || ! function_exists( 'ww_p4_element_span' ) ) {
+			return $html;
+		}
+		$guard  = 0;
+		$offset = 0;
+		while ( $guard < 8 ) {
+			$guard++;
+			if ( ! preg_match( '/<div\b[^>]*class=(["\'])[^"\']*\bfw-case\b[^"\']*\1[^>]*>/', $html, $m, PREG_OFFSET_CAPTURE, $offset ) ) {
+				break;
+			}
+			$start  = $m[0][1];
+			$before = substr( $html, max( 0, $start - 60 ), 60 );
+			if ( false !== strpos( $before, 'ww-p4-case' ) ) {
+				$offset = $start + 10;
+				continue;
+			}
+			$span = ww_p4_element_span( $html, $start );
+			if ( ! $span ) {
+				break;
+			}
+			$block   = substr( $html, $span[0], $span[1] - $span[0] );
+			$wrapped = '<details class="ww-p4-case"><summary>Picture this</summary>' . $block . '</details>';
+			$html    = substr( $html, 0, $span[0] ) . $wrapped . substr( $html, $span[1] );
+			$offset  = $span[0] + strlen( $wrapped );
+		}
+		return $html;
+	}
+}
+
 if ( defined( 'ABSPATH' ) ) {
 	add_action(
 		'template_redirect',
@@ -132,6 +211,14 @@ if ( defined( 'ABSPATH' ) ) {
 			}
 			if ( is_home() ) {
 				ob_start( 'ww_p4_transform_blog_index_html' );
+				return;
+			}
+			if ( is_page( 'start-here' ) ) {
+				ob_start( 'ww_p4_transform_start_here_html' );
+				return;
+			}
+			if ( is_page( 'the-second-income-engine' ) ) {
+				ob_start( 'ww_p4_transform_engine_html' );
 			}
 		},
 		4

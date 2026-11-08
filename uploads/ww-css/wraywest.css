@@ -4137,3 +4137,45 @@ html body.archive .posted-on time.published::before { content: "Published "; }
   html body.v37 .vb-chip,
   html body.archive .ww-chip { transition: none !important; }
 }
+
+/* Phase 4 Start Here and Second Income Engine. No new colors. #wwl-h is not here. */
+html body .sh-next a,
+html body .sh-btn,
+html body .sh-bio-link,
+html body .fw-nav-item,
+html body .fw-btn,
+html body .ww-p4-folded > summary,
+html body .ww-p4-case > summary {
+  min-height: 44px !important;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+html body .ww-p4-folded > summary,
+html body .ww-p4-case > summary {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1A1714;
+  padding: 8px 0;
+}
+html body .ww-p4-case .fw-case-label { display: none; }
+html body .sh-next a:focus-visible,
+html body .sh-btn:focus-visible,
+html body .fw-nav-item:focus-visible,
+html body .fw-btn:focus-visible,
+html body .ww-p4-folded > summary:focus-visible,
+html body .ww-p4-case > summary:focus-visible {
+  outline: 2px solid #7D4A17 !important;
+  outline-offset: 3px !important;
+}
+@media (max-width: 480px) {
+  html body .fw-nav { position: static !important; }
+  html body .fw-nav-grid { grid-template-columns: 1fr !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html body .fw-nav-item,
+  html body .sh-btn,
+  html body .fw-btn { transition: none !important; }
+}

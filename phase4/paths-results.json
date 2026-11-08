@@ -1,0 +1,196 @@
+{
+  "capturedHtmlFixture": true,
+  "wordpressBoot": false,
+  "pages": {
+    "start-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Start Here: Your Second Income Roadmap",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 0,
+        "summaryH": null,
+        "navH": 46
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "start-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Start Here: Your Second Income Roadmap",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 0,
+        "summaryH": null,
+        "navH": 46
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "start-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Start Here: Your Second Income Roadmap",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 1,
+        "summaryH": 46,
+        "navH": 44
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "start-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Start Here: Your Second Income Roadmap",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 1,
+        "summaryH": 44,
+        "navH": 44
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "engine-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "The Second Income Engine",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 0,
+        "summaryH": null,
+        "navH": 58
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "engine-before-390": {
+      "measure": {
+        "h1": {
+          "text": "The Second Income Engine",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 0,
+        "summaryH": null,
+        "navH": 58
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "engine-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "The Second Income Engine",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 6,
+        "summaryH": 46,
+        "navH": 58
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    },
+    "engine-after-390": {
+      "measure": {
+        "h1": {
+          "text": "The Second Income Engine",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "overflow": false,
+        "folded": 6,
+        "summaryH": 44,
+        "navH": 58
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outlin"
+        }
+      ]
+    }
+  },
+  "startFocus": {
+    "text": "Six posts most readers start with",
+    "outline": "solid",
+    "width": "2px",
+    "animation": "none"
+  },
+  "engineFocus": {
+    "text": "01Clarify Your Niche",
+    "h": 58,
+    "outline": "solid",
+    "width": "2px"
+  },
+  "contrastNote": "H1 color measured; background is the warm band #F7E3C4 at the bottom of the existing gradient.",
+  "h1ContrastOnBand": 13.87
+}

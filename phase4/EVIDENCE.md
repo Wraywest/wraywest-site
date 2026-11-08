@@ -29,3 +29,18 @@ Local Chrome renders of public HTML captured read-only on 2026-11-08. Not a Word
 Numbers and axe output: `phase4/home-archive-results.json`. Teaser before/after sentences: `phase4/home-teaser-manifest.json`.
 
 The UniConsent panel in these shots is the panel already in the captured HTML. It was not edited.
+
+## Start Here and Second Income Engine
+
+Captured-HTML fixtures, not a WordPress boot.
+
+- Start Here before, 1440: `/opt/cursor/artifacts/phase4-start-before-1440.png`
+- Start Here after, 1440: `/opt/cursor/artifacts/phase4-start-after-1440.png`
+- Start Here before, 390: `/opt/cursor/artifacts/phase4-start-before-390.png`
+- Start Here after, 390: `/opt/cursor/artifacts/phase4-start-after-390.png`
+- Engine before, 1440: `/opt/cursor/artifacts/phase4-engine-before-1440.png`
+- Engine after, 1440: `/opt/cursor/artifacts/phase4-engine-after-1440.png`
+- Engine before, 390: `/opt/cursor/artifacts/phase4-engine-before-390.png`
+- Engine after, 390: `/opt/cursor/artifacts/phase4-engine-after-390.png`
+
+Numbers: `phase4/paths-results.json`. Acceptance checklist: `phase4/acceptance-criteria.md`.
