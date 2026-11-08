@@ -1,0 +1,587 @@
+{
+  "localWordPressBoot": false,
+  "source": "public HTML captured 2026-11-08",
+  "pages": {
+    "home-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "A second income, built after the shift.",
+          "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+          "size": "86.4px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": true,
+          "leads": true,
+          "olspSource": true,
+          "leadsSource": true
+        },
+        "badTeaser": true,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "home-before-390": {
+      "measure": {
+        "h1": {
+          "text": "A second income, built after the shift.",
+          "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": true,
+          "leads": true,
+          "olspSource": true,
+          "leadsSource": true
+        },
+        "badTeaser": true,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "home-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "A second income, built after the shift.",
+          "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+          "size": "86.4px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": true,
+          "leads": true,
+          "olspSource": true,
+          "leadsSource": true
+        },
+        "badTeaser": false,
+        "narrow": true
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "home-after-390": {
+      "measure": {
+        "h1": {
+          "text": "A second income, built after the shift.",
+          "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": true,
+          "leads": true,
+          "olspSource": true,
+          "leadsSource": true
+        },
+        "badTeaser": false,
+        "narrow": true
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "blog-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Articles",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [
+          {
+            "t": "All",
+            "y": 392,
+            "h": 44,
+            "w": 58
+          },
+          {
+            "t": "Side Income 16",
+            "y": 392,
+            "h": 44,
+            "w": 155
+          },
+          {
+            "t": "Tools & Software Reviews 10",
+            "y": 392,
+            "h": 44,
+            "w": 252
+          },
+          {
+            "t": "Email Marketing 9",
+            "y": 392,
+            "h": 44,
+            "w": 178
+          },
+          {
+            "t": "Money & Finance 6",
+            "y": 392,
+            "h": 44,
+            "w": 182
+          },
+          {
+            "t": "Content Strategy 2",
+            "y": 392,
+            "h": 44,
+            "w": 183
+          }
+        ],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": false,
+          "leads": true,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": true,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "blog-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Articles",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1714"
+        },
+        "chips": [
+          {
+            "t": "All",
+            "y": 324,
+            "h": 44,
+            "w": 58
+          },
+          {
+            "t": "Side Income 16",
+            "y": 324,
+            "h": 44,
+            "w": 155
+          },
+          {
+            "t": "Tools & Software Reviews 10",
+            "y": 324,
+            "h": 44,
+            "w": 252
+          },
+          {
+            "t": "Email Marketing 9",
+            "y": 324,
+            "h": 44,
+            "w": 178
+          },
+          {
+            "t": "Money & Finance 6",
+            "y": 324,
+            "h": 44,
+            "w": 182
+          },
+          {
+            "t": "Content Strategy 2",
+            "y": 324,
+            "h": 44,
+            "w": 183
+          }
+        ],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": true,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "blog-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Articles",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [
+          {
+            "t": "All",
+            "y": 392,
+            "h": 44,
+            "w": 58
+          },
+          {
+            "t": "Side Income 16",
+            "y": 392,
+            "h": 44,
+            "w": 155
+          },
+          {
+            "t": "Tools & Software Reviews 10",
+            "y": 392,
+            "h": 44,
+            "w": 252
+          },
+          {
+            "t": "Email Marketing 9",
+            "y": 392,
+            "h": 44,
+            "w": 178
+          },
+          {
+            "t": "Money & Finance 6",
+            "y": 392,
+            "h": 44,
+            "w": 182
+          },
+          {
+            "t": "Content Strategy 2",
+            "y": 392,
+            "h": 44,
+            "w": 183
+          }
+        ],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": false,
+          "leads": true,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": true
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "blog-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Articles",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1714"
+        },
+        "chips": [
+          {
+            "t": "All",
+            "y": 324,
+            "h": 44,
+            "w": 58
+          },
+          {
+            "t": "Side Income 16",
+            "y": 324,
+            "h": 44,
+            "w": 155
+          },
+          {
+            "t": "Tools & Software Reviews 10",
+            "y": 376,
+            "h": 44,
+            "w": 252
+          },
+          {
+            "t": "Email Marketing 9",
+            "y": 428,
+            "h": 44,
+            "w": 178
+          },
+          {
+            "t": "Money & Finance 6",
+            "y": 480,
+            "h": 44,
+            "w": 182
+          },
+          {
+            "t": "Content Strategy 2",
+            "y": 532,
+            "h": 44,
+            "w": 183
+          }
+        ],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": true
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "money-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Money & Finance",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "money-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Money & Finance",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "money-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Money & Finance",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 1440,
+        "client": 1440,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    },
+    "money-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Money & Finance",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1714"
+        },
+        "chips": [],
+        "overflow": false,
+        "scroll": 390,
+        "client": 390,
+        "receipts": {
+          "olsp": false,
+          "leads": false,
+          "olspSource": false,
+          "leadsSource": false
+        },
+        "badTeaser": false,
+        "narrow": false
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ]
+    }
+  },
+  "reducedMotion": {
+    "animation": "none",
+    "duration": "0s"
+  },
+  "chipFocus": {
+    "text": "All",
+    "outline": "solid",
+    "width": "2px",
+    "h": 44
+  },
+  "homeAxeAfterFonts": {
+    "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1,
+        "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+      }
+    ]
+  },
+  "moneyChips390": [
+    {
+      "t": "All",
+      "y": 385,
+      "h": 44,
+      "display": "flex"
+    },
+    {
+      "t": "Side Income 16",
+      "y": 385,
+      "h": 44,
+      "display": "flex"
+    },
+    {
+      "t": "Tools & Software Reviews 10",
+      "y": 437,
+      "h": 44,
+      "display": "flex"
+    },
+    {
+      "t": "Email Marketing 9",
+      "y": 489,
+      "h": 44,
+      "display": "flex"
+    },
+    {
+      "t": "Money & Finance 6",
+      "y": 489,
+      "h": 44,
+      "display": "flex"
+    },
+    {
+      "t": "Content Strategy 2",
+      "y": 541,
+      "h": 44,
+      "display": "flex"
+    }
+  ],
+  "headlineUnchanged": {
+    "before": {
+      "text": "A second income, built after the shift.",
+      "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+      "size": "86.4px",
+      "color": "#1a1714"
+    },
+    "after": {
+      "text": "A second income, built after the shift.",
+      "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+      "size": "86.4px",
+      "color": "#1a1714"
+    }
+  }
+}

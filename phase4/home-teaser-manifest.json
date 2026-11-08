@@ -1,0 +1,43 @@
+{
+    "captured": "2026-11-08 public homepage, read-only",
+    "local_wordpress_boot": false,
+    "teasers": [
+        {
+            "url": "https://wraywestblog.com/blog/n8n-side-hustle-automation/",
+            "before": "What it cost, what broke, and when automation actually helps a side hustle.",
+            "after": "Some posts on this site were made with n8n."
+        },
+        {
+            "url": "https://wraywestblog.com/blog/make-vs-n8n-side-hustlers/",
+            "before": "Make if you want it to just run, n8n if you can self-host. Pricing, ease, hosting, and AI…",
+            "after": "Some posts made with n8n; Make researched."
+        },
+        {
+            "url": "https://wraywestblog.com/blog/",
+            "before": "Make if you want it to just run, n8n if you can self-host. Pricing, ease, hosting, and AI compared.",
+            "after": "Some posts made with n8n; Make researched."
+        }
+    ],
+    "added_links": [
+        "https://wraywestblog.com/blog/category/money-finance/",
+        "https://wraywestblog.com/blog/category/content-strategy/",
+        "https://wraywestblog.com/blog/1099-k-explained-creators/",
+        "https://wraywestblog.com/blog/klarna-review/",
+        "https://wraywestblog.com/blog/managing-creator-income-taxes-tools/",
+        "https://wraywestblog.com/blog/ab-testing-one-person-businesses/",
+        "https://wraywestblog.com/blog/content-calendar-publish-working-full-time/"
+    ],
+    "unchanged": {
+        "headline": "A second income, built after the shift.",
+        "receipts": [
+            "$810.95",
+            "$17.77"
+        ],
+        "sources": [
+            "Source: my OLSP dashboard",
+            "Source: my LeadsLeap account"
+        ],
+        "deck_bytes": 4908
+    },
+    "redirects_applied": []
+}

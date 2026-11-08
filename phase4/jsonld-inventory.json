@@ -1,0 +1,2699 @@
+{
+  "capturedHtmlFixture": true,
+  "wordpressBoot": false,
+  "pages": 63,
+  "scripts": 124,
+  "where": {
+    "rankmath-head": 63,
+    "in-content": 60,
+    "head-other": 1
+  },
+  "olsp": {
+    "file": "blog_olsp-system-review-2026.html",
+    "scripts": 3,
+    "byWhere": {
+      "rankmath-head": 1,
+      "in-content": 2
+    },
+    "blocks": [
+      {
+        "where": "rankmath-head",
+        "types": [
+          "Organization",
+          "ImageObject",
+          "ImageObject",
+          "WebSite",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "ListItem",
+          "ListItem",
+          "WebPage",
+          "Person",
+          "ImageObject",
+          "BlogPosting"
+        ],
+        "bytes": 4541
+      },
+      {
+        "where": "in-content",
+        "types": [
+          "Review",
+          "SoftwareApplication",
+          "Person",
+          "Rating",
+          "Organization"
+        ],
+        "bytes": 688
+      },
+      {
+        "where": "in-content",
+        "types": [
+          "FAQPage",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer"
+        ],
+        "bytes": 1297
+      }
+    ]
+  },
+  "pagesDetail": [
+    {
+      "file": "HOME.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "SearchAction",
+            "ImageObject",
+            "WebPage"
+          ],
+          "bytes": 2118
+        }
+      ]
+    },
+    {
+      "file": "about.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem"
+          ],
+          "bytes": 345
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "ProfilePage",
+            "Person",
+            "Organization"
+          ],
+          "bytes": 1357
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1406
+        }
+      ]
+    },
+    {
+      "file": "author-dwayne.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ProfilePage",
+            "Person",
+            "ImageObject"
+          ],
+          "bytes": 2426
+        }
+      ]
+    },
+    {
+      "file": "blog.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1352
+        }
+      ]
+    },
+    {
+      "file": "blog_1099-k-explained-creators.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4541
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2919
+        }
+      ]
+    },
+    {
+      "file": "blog_ab-testing-one-person-businesses.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4517
+        }
+      ]
+    },
+    {
+      "file": "blog_affiliate-marketing-side-hustle.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4597
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2654
+        }
+      ]
+    },
+    {
+      "file": "blog_ai-side-hustles-that-work.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4588
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2542
+        }
+      ]
+    },
+    {
+      "file": "blog_best-side-hustles-2026.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4503
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2648
+        }
+      ]
+    },
+    {
+      "file": "blog_category_content-strategy.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1609
+        }
+      ]
+    },
+    {
+      "file": "blog_category_email-marketing.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1606
+        }
+      ]
+    },
+    {
+      "file": "blog_category_money-finance.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1598
+        }
+      ]
+    },
+    {
+      "file": "blog_category_side-income.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1584
+        }
+      ]
+    },
+    {
+      "file": "blog_category_tools.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Person",
+            "ImageObject",
+            "WebSite",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "CollectionPage"
+          ],
+          "bytes": 1570
+        }
+      ]
+    },
+    {
+      "file": "blog_content-calendar-publish-working-full-time.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4672
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2032
+        }
+      ]
+    },
+    {
+      "file": "blog_convertkit-alternatives.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4528
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2542
+        }
+      ]
+    },
+    {
+      "file": "blog_convertkit-review-email-marketing-creators.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4638
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 1021
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2094
+        }
+      ]
+    },
+    {
+      "file": "blog_creator-burnout-truth.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4469
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1357
+        }
+      ]
+    },
+    {
+      "file": "blog_creator-business-blueprint-second-income-2026.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4680
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1435
+        }
+      ]
+    },
+    {
+      "file": "blog_dataforseo-review.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4508
+        }
+      ]
+    },
+    {
+      "file": "blog_email-deliverability-small-senders.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4653
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2150
+        }
+      ]
+    },
+    {
+      "file": "blog_email-list-building-100-subscribers.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4534
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1200
+        }
+      ]
+    },
+    {
+      "file": "blog_email-marketing-playbook-solo-creators.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4600
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2858
+        }
+      ]
+    },
+    {
+      "file": "blog_find-your-creator-niche.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4442
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1987
+        }
+      ]
+    },
+    {
+      "file": "blog_freelance-writing-side-hustle.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4565
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2837
+        }
+      ]
+    },
+    {
+      "file": "blog_freelancing-as-creator-trading-time-for-money.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4635
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1350
+        }
+      ]
+    },
+    {
+      "file": "blog_google-analytics-creators-setup-guide.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4644
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2187
+        }
+      ]
+    },
+    {
+      "file": "blog_hostinger-horizons-review-ai-website-builder.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4691
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 367
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1900
+        }
+      ]
+    },
+    {
+      "file": "blog_how-to-price-freelance-services-day-job.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4596
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2191
+        }
+      ]
+    },
+    {
+      "file": "blog_how-to-start-creator-business-no-audience.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4686
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1903
+        }
+      ]
+    },
+    {
+      "file": "blog_how-to-write-emails-people-want-to-open.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4612
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2488
+        }
+      ]
+    },
+    {
+      "file": "blog_investing-your-side-income-practical-starting-point.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4715
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1570
+        }
+      ]
+    },
+    {
+      "file": "blog_klarna-review.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4490
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "FinancialProduct",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 307
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1482
+        }
+      ]
+    },
+    {
+      "file": "blog_lead-magnet-ideas.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4451
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2498
+        }
+      ]
+    },
+    {
+      "file": "blog_leadsleap-review-honest-2026.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4579
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Offer",
+            "Offer",
+            "Rating",
+            "Person"
+          ],
+          "bytes": 816
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2062
+        }
+      ]
+    },
+    {
+      "file": "blog_make-vs-n8n-side-hustlers.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4643
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2438
+        }
+      ]
+    },
+    {
+      "file": "blog_managing-creator-income-taxes-tools.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4579
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1927
+        }
+      ]
+    },
+    {
+      "file": "blog_mindset-shift-creator-business.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4558
+        }
+      ]
+    },
+    {
+      "file": "blog_n8n-side-hustle-automation.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4633
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2388
+        }
+      ]
+    },
+    {
+      "file": "blog_notion-review-creator-workspace-2026.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4616
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2047
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "Person",
+            "SoftwareApplication",
+            "Rating"
+          ],
+          "bytes": 741
+        }
+      ]
+    },
+    {
+      "file": "blog_olsp-system-review-2026.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4541
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 688
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1297
+        }
+      ]
+    },
+    {
+      "file": "blog_profitable-creator-niches-full-time-employees-2026.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4762
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2152
+        }
+      ]
+    },
+    {
+      "file": "blog_repurpose-io-content-automation.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4633
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 360
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1705
+        }
+      ]
+    },
+    {
+      "file": "blog_robinhood-review.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4510
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "FinancialProduct",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 310
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1573
+        }
+      ]
+    },
+    {
+      "file": "blog_second-income-product-blueprint.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4556
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1400
+        }
+      ]
+    },
+    {
+      "file": "blog_solo-creator-metrics-that-matter.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4504
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1381
+        }
+      ]
+    },
+    {
+      "file": "blog_systeme-io-review-all-in-one-platform.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4632
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "SoftwareApplication",
+            "Person",
+            "Rating",
+            "Organization"
+          ],
+          "bytes": 358
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1431
+        }
+      ]
+    },
+    {
+      "file": "blog_systeme-vs-convertkit.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4482
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2181
+        }
+      ]
+    },
+    {
+      "file": "blog_welcome-email-sequence-template.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4476
+        }
+      ]
+    },
+    {
+      "file": "blog_why-side-hustles-fail.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4526
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2372
+        }
+      ]
+    },
+    {
+      "file": "blog_wise-international-money-transfers.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage",
+            "Person",
+            "ImageObject",
+            "BlogPosting"
+          ],
+          "bytes": 4635
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "Review",
+            "FinancialProduct",
+            "Person",
+            "Organization"
+          ],
+          "bytes": 215
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1662
+        }
+      ]
+    },
+    {
+      "file": "contact.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem"
+          ],
+          "bytes": 336
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "ContactPage",
+            "Organization"
+          ],
+          "bytes": 427
+        }
+      ]
+    },
+    {
+      "file": "engine.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2467
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 3177
+        }
+      ]
+    },
+    {
+      "file": "freelance-rate-calculator.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2560
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "WebApplication",
+            "Offer"
+          ],
+          "bytes": 695
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1483
+        }
+      ]
+    },
+    {
+      "file": "lead-magnet-builder.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2495
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "WebApplication",
+            "Offer"
+          ],
+          "bytes": 719
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2158
+        }
+      ]
+    },
+    {
+      "file": "legal.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2249
+        }
+      ]
+    },
+    {
+      "file": "privacy-policy.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2302
+        }
+      ]
+    },
+    {
+      "file": "quit-9-to-5-calculator.html",
+      "scripts": 3,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 2
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2479
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "WebApplication",
+            "Offer"
+          ],
+          "bytes": 802
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2704
+        }
+      ]
+    },
+    {
+      "file": "resources.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2320
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 1913
+        }
+      ]
+    },
+    {
+      "file": "scoring-methodology.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2402
+        }
+      ]
+    },
+    {
+      "file": "start-here.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "in-content": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2326
+        },
+        {
+          "where": "in-content",
+          "types": [
+            "FAQPage",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer",
+            "Question",
+            "Answer"
+          ],
+          "bytes": 2882
+        }
+      ]
+    },
+    {
+      "file": "terms-of-service.html",
+      "scripts": 1,
+      "byWhere": {
+        "rankmath-head": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2316
+        }
+      ]
+    },
+    {
+      "file": "tools.html",
+      "scripts": 2,
+      "byWhere": {
+        "rankmath-head": 1,
+        "head-other": 1
+      },
+      "blocks": [
+        {
+          "where": "rankmath-head",
+          "types": [
+            "Organization",
+            "ImageObject",
+            "ImageObject",
+            "WebSite",
+            "ImageObject",
+            "BreadcrumbList",
+            "ListItem",
+            "ListItem",
+            "WebPage"
+          ],
+          "bytes": 2282
+        },
+        {
+          "where": "head-other",
+          "types": [
+            "ItemList",
+            "ListItem",
+            "ListItem",
+            "ListItem"
+          ],
+          "bytes": 794
+        }
+      ]
+    }
+  ]
+}

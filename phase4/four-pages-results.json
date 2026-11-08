@@ -1,0 +1,853 @@
+{
+  "capturedHtmlFixture": true,
+  "wordpressBoot": false,
+  "pages": {
+    "tools-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Free calculators and the tools I tested",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Try the calculator →",
+        "rowTransition": "background-color",
+        "labels": [
+          {
+            "name": "ConvertKit",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Systeme.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Make.com",
+            "label": "Researched"
+          },
+          {
+            "name": "Notion",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Repurpose.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Hostinger Horizons",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Wise",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Robinhood",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Klarna",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "OLSP System",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "LeadsLeap",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "DataForSEO",
+            "label": "Used hands-on"
+          }
+        ],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/tools/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "tools-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Free calculators and the tools I tested",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Try the calculator →",
+        "rowTransition": "all",
+        "labels": [
+          {
+            "name": "ConvertKit",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Systeme.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Make.com",
+            "label": "Researched"
+          },
+          {
+            "name": "Notion",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Repurpose.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Hostinger Horizons",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Wise",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Robinhood",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Klarna",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "OLSP System",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "LeadsLeap",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "DataForSEO",
+            "label": "Used hands-on"
+          }
+        ],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/tools/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "tools-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Free calculators and the tools I tested",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Try the calculator →",
+        "rowTransition": "background-color",
+        "labels": [
+          {
+            "name": "ConvertKit",
+            "label": "Researched"
+          },
+          {
+            "name": "Systeme.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Make.com",
+            "label": "Researched"
+          },
+          {
+            "name": "Notion",
+            "label": "Researched"
+          },
+          {
+            "name": "Repurpose.io",
+            "label": "Researched"
+          },
+          {
+            "name": "Hostinger Horizons",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Wise",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Robinhood",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Klarna",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "OLSP System",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "LeadsLeap",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "DataForSEO",
+            "label": "Used hands-on"
+          }
+        ],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/tools/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "tools-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Free calculators and the tools I tested",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Try the calculator →",
+        "rowTransition": "all",
+        "labels": [
+          {
+            "name": "ConvertKit",
+            "label": "Researched"
+          },
+          {
+            "name": "Systeme.io",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Make.com",
+            "label": "Researched"
+          },
+          {
+            "name": "Notion",
+            "label": "Researched"
+          },
+          {
+            "name": "Repurpose.io",
+            "label": "Researched"
+          },
+          {
+            "name": "Hostinger Horizons",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Wise",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Robinhood",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "Klarna",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "OLSP System",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "LeadsLeap",
+            "label": "Used hands-on"
+          },
+          {
+            "name": "DataForSEO",
+            "label": "Used hands-on"
+          }
+        ],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/tools/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "resources-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Tools & Resources I Actually Use",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 22,
+        "nextText": "Read the framework →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "resources-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Tools & Resources I Actually Use",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 22,
+        "nextText": "Read the framework →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "resources-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Tools & Resources I Actually Use",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Read the framework →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "resources-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Tools & Resources I Actually Use",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Read the framework →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": false,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "about-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "About Dwayne Lindsay",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 46,
+        "nextText": "Contact me →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "about-before-390": {
+      "measure": {
+        "h1": {
+          "text": "About Dwayne Lindsay",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 46,
+        "nextText": "Contact me →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "about-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "About Dwayne Lindsay",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 46,
+        "nextText": "Contact me →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "about-after-390": {
+      "measure": {
+        "h1": {
+          "text": "About Dwayne Lindsay",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 46,
+        "nextText": "Contact me →",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "contact-before-1440": {
+      "measure": {
+        "h1": {
+          "text": "Contact",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Send message",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/contact/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "contact-before-390": {
+      "measure": {
+        "h1": {
+          "text": "Contact",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3d3d",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Send message",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/contact/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "contact-after-1440": {
+      "measure": {
+        "h1": {
+          "text": "Contact",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "48px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "48px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Send message",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/contact/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    },
+    "contact-after-390": {
+      "measure": {
+        "h1": {
+          "text": "Contact",
+          "font": "\"Instrument Serif\", Georgia, serif",
+          "size": "36px",
+          "color": "#1a1a1a"
+        },
+        "sub": {
+          "color": "#3d3732",
+          "size": "18px"
+        },
+        "heroBorder": "1px solid",
+        "heroGap": "28px",
+        "overflow": false,
+        "nextH": 44,
+        "nextText": "Send message",
+        "rowTransition": null,
+        "labels": [],
+        "portrait": true,
+        "forms": [
+          "https://wraywestblog.com/|ww-search-form",
+          "https://wraywestblog.com/|ww-search-form",
+          "/contact/|wpforms-validate wpforms-form wpforms-aj",
+          "|hostinger-reach-block-subscription-form"
+        ]
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "sample": "<button tabindex=\"0\" type=\"button\" class=\" bg-gray-300 text-sm md:text-md hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded outline-none m-1 md:m-2 un"
+        }
+      ]
+    }
+  },
+  "focus": {
+    "tools": {
+      "active": true,
+      "text": "Try the calculator →",
+      "h": 44,
+      "outline": "solid",
+      "width": "2px",
+      "rowTransition": "none",
+      "spanTransition": "none"
+    },
+    "resources": {
+      "active": true,
+      "text": "Read the framework →",
+      "h": 44,
+      "outline": "solid",
+      "width": "2px",
+      "rowTransition": null,
+      "spanTransition": null
+    },
+    "about": {
+      "active": true,
+      "text": "Contact me →",
+      "h": 46,
+      "outline": "solid",
+      "width": "2px",
+      "rowTransition": null,
+      "spanTransition": null
+    },
+    "contact": {
+      "active": true,
+      "text": "Send message",
+      "h": 44,
+      "outline": "solid",
+      "width": "2px",
+      "rowTransition": null,
+      "spanTransition": null
+    }
+  },
+  "consent": {
+    "buttons": [],
+    "script": true
+  },
+  "crops": [
+    {
+      "label": "ConvertKit",
+      "box": {
+        "x": 152,
+        "y": 1434.15625,
+        "width": 1136,
+        "height": 261.765625
+      }
+    },
+    {
+      "label": "Notion",
+      "box": {
+        "x": 152,
+        "y": 2256.515625,
+        "width": 1136,
+        "height": 233.265625
+      }
+    },
+    {
+      "label": "Repurpose.io",
+      "box": {
+        "x": 152,
+        "y": 2489.78125,
+        "width": 1136,
+        "height": 284.265625
+      }
+    },
+    {
+      "label": "Make.com",
+      "box": {
+        "x": 152,
+        "y": 2057.75,
+        "width": 1136,
+        "height": 196.765625
+      }
+    }
+  ],
+  "dekContrastOnBand": 9.35,
+  "dekContrastOnLight": 9.99,
+  "aboutH1Contrast": 13.87
+}

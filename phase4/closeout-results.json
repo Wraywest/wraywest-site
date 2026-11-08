@@ -1,0 +1,234 @@
+{
+  "capturedHtmlFixture": true,
+  "wordpressBoot": false,
+  "pages": {
+    "home-before-1440": {
+      "measure": {
+        "h1": "A second income, built after the shift.",
+        "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+        "size": "86.4px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "home-before-390": {
+      "measure": {
+        "h1": "A second income, built after the shift.",
+        "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "home-after-1440": {
+      "measure": {
+        "h1": "A second income, built after the shift.",
+        "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+        "size": "86.4px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "home-after-390": {
+      "measure": {
+        "h1": "A second income, built after the shift.",
+        "font": "\"Instrument Serif\", \"IS Fallback\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "blog-before-1440": {
+      "measure": {
+        "h1": "Articles",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": "color, background-color, border-color, box-shadow, transform, opacity",
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "blog-before-390": {
+      "measure": {
+        "h1": "Articles",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "36px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": "color, background-color, border-color, box-shadow, transform, opacity",
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "blog-after-1440": {
+      "measure": {
+        "h1": "Articles",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": "color, background-color, border-color, box-shadow, transform, opacity",
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "blog-after-390": {
+      "measure": {
+        "h1": "Articles",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "36px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": "color, background-color, border-color, box-shadow, transform, opacity",
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "robin-before-1440": {
+      "measure": {
+        "h1": "Robinhood Review 2026: Investing Your Side Income",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 26, 26)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "robin-before-390": {
+      "measure": {
+        "h1": "Robinhood Review 2026: Investing Your Side Income",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "36px",
+        "color": "rgb(26, 26, 26)",
+        "overflow": false,
+        "transition": null,
+        "label": null
+      },
+      "violations": []
+    },
+    "robin-after-1440": {
+      "measure": {
+        "h1": "Robinhood Review 2026: Investing Your Side Income",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "48px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": "Used"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    },
+    "robin-after-390": {
+      "measure": {
+        "h1": "Robinhood Review 2026: Investing Your Side Income",
+        "font": "\"Instrument Serif\", Georgia, serif",
+        "size": "36px",
+        "color": "rgb(26, 23, 20)",
+        "overflow": false,
+        "transition": null,
+        "label": "Used"
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "ratio": 3.29
+        }
+      ]
+    }
+  },
+  "reduced": {
+    "h": 44,
+    "transition": "color, background-color, border-color, box-shadow, transform, opacity",
+    "duration": "0s",
+    "outline": "none"
+  },
+  "homepageLocked": true
+}
