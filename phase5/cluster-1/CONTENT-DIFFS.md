@@ -20,6 +20,9 @@ Cluster acceptance stays blocked. The diffs below are a review file. They are no
 | `https://www.socialmediatoday.com/news/new-report-shows-96-online-creators-make-less-100k-per-year/706499/` | HTTP 200. Published Feb 3, 2024. | Secondary. It quotes Kajabi, "surveyed 2,000 creators," and the line "96% of creators earn less than $100k/year." The Kajabi report itself was not opened. |
 | `https://kajabi.com/blog/impostor-phenomenon-study` | HTTP 200. | "Our 2020 survey." "84% of the entrepreneurs and small business owners surveyed had scores indicating they feel like an imposter at moderate, frequent, or intense levels." |
 | `https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes` | HTTP 200. | "The self-employment tax rate is 15.3%." "12.4% for social security" and "2.9% for Medicare." For 2026, the social security wage base shown is $184,500. The page does not say 92.35%. |
+| `https://www.irs.gov/publications/p334` | HTTP 200. Publication 334 (2025). | "Multiply your self-employment earnings by 92.35% (0.9235)." It points to line 4a of Schedule SE. |
+| `https://www.irs.gov/pub/irs-pdf/i1040sse.pdf` | HTTP 200. Header says 2026 Instructions for Schedule SE, proof date 28 Oct 2026. | The extracted text says "See Pub. 225 or Pub. 334." It does not print 92.35. |
+| `https://www.bankrate.com/press-releases/fewer-americans-have-a-side-hustle-in-2025/` | HTTP 200. Dateline July 9, 2025. | 27% of U.S. adults have a side hustle, down from 36% in 2024. Average $885 a month. Median $200. 58% earn more than $100, 25% more than $500, 14% more than $1,000. |
 | `https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/` | HTTP 200 with a browser user agent. | The guide does not state a 3-to-6-month rule. |
 
 Not read: the Kajabi 2024 State of Creators instrument. Firecrawl was not available (`npx firecrawl` could not determine an executable). No proofread binary, GEO binary, or schema validator was run. The checks below are manual.
@@ -38,7 +41,27 @@ Recommendation: keep the two URLs separate. Do not absorb, and do not apply a 30
 
 ## 1. `/the-second-income-engine/`
 
-TIGHTEN. No sentence change. One chef-schedule sentence. The Make line does not say the tool was used. In-content FAQPage stays. Its emitter is not in this repo.
+TIGHTEN. The Make line stays: "Use Make.com or similar for cross-platform automation." It does not say the tool was used. The in-content FAQPage stays.
+
+The hour counts, the 18-to-36-month range, the "under 50 dollars" product, and the 80/20 split have no citation. Add this sentence after "This framework is built for people who have 8 to 12 hours a week.":
+
+```
+The hour counts, month ranges, price cap, and 80/20 split on this page are planning assumptions for the framework, not survey results.
+```
+
+Before:
+
+```
+Filter two: 4,200 monthly searches for related keywords.
+```
+
+After:
+
+```
+Filter two: people already search for the problem.
+```
+
+The healthcare shift worker in that passage is an illustration, not a client. The 4,200 figure had no source.
 
 ## 2. `/start-here/`
 
@@ -100,9 +123,15 @@ The paragraph under that H3 says "But consider: 84% of entrepreneurs feel the sa
 
 The next paragraph says a typical first post takes weeks, many rounds of revision, and only a trickle of views, and that the tenth post takes a fraction of the time. No source is on the page. After, delete that paragraph. The following paragraph, "Speed comes from repetition, not preparation.", stays.
 
+Circle's current statistics page, fetched 8 Nov 2026, does not contain "$234.65 billion", "2.7x", or "$31K". Delete the sentences that state those figures, including the repeats in the TL;DR, the email section, the closing, and the FAQPage JSON-LD. DemandSage returned HTTP 403, so delete the sentences that cite it for 207 million creators, 45 million professionals, 4% over $100,000, and over 50% under $15,000. HubSpot "434% more indexed pages", Orbit Media "39%", and Litmus "$36-$42" were not opened, so those sentences are deleted rather than kept as if they had been checked. No replacement market figure is added. Creator Spotlight's opened report does support "nearly half ... less than $500" in 2025, among 427 readers, so that sentence can stay if the link is `https://www.creatorspotlight.com/p/monetization-report-2025`, the page that was read. The on-page host `creatorspotlight.co` was not opened. Do not add "per month" or "46.8%". The FAQPage JSON-LD answers that repeat the deleted figures must use the same remaining text.
+
 ## 4. `/blog/why-side-hustles-fail/`
 
-TIGHTEN. No sentence change. The only n8n hit is a related-post title, which is another post's title.
+TIGHTEN. Bankrate's press release, fetched 8 Nov 2026, matches the page: 27% of U.S. adults have a side hustle, down from 36% in 2024; average $885 a month; median $200; 58% earn more than $100; 25% more than $500; 14% more than $1,000. Dated July 9, 2025 on the release. Those sentences stay. `$17.77` and 35 referrals stay.
+
+The linked affiliate PDF does not contain 57.55, 3.78, or 7.94. Delete every sentence and table row that states those shares, including later repeats of "57.55%". The FAQPage answer that repeats 57.55% drops that clause and keeps the Bankrate median and 14%.
+
+ZipRecruiter's "$34 an hour" and "$15 to $20" have no link, and "IRS Fact Sheet FS-2025-08" is named but not linked. Those rate and $20,000 sentences are deleted. No replacement wage or threshold is added. The n8n hit elsewhere on the page is a related-post title.
 
 ## 5. `/blog/mindset-shift-creator-business/`
 
@@ -216,13 +245,11 @@ Before, checksum `8a6083d3eb77d198715d9b36ff56c8ec`:
 <li><strong>Week 4: The System Build.</strong> Set up automation tools like <a href="https://www.make.com/" rel="sponsored noopener" target="_blank">Make.com</a> or Zapier to handle repetitive tasks. Schedule your content calendar with a 2-week buffer.</li>
 ```
 
-After:
+After. The setup claim is gone. The same Make link and the same `rel="sponsored noopener"` stay, in a researched-only sentence. Affiliation is not asserted and is not asked about. Zapier is not described as used.
 
 ```
-<li><strong>Week 4: The System Build.</strong> Schedule your content calendar with a 2-week buffer.</li>
+<li><strong>Week 4: The System Build.</strong> Schedule your content calendar with a 2-week buffer. <a href="https://www.make.com/" rel="sponsored noopener" target="_blank">Make.com</a> is listed as researched only. This site has not used it hands-on. The sponsored mark stays because affiliation is still unconfirmed. Zapier was never used.</li>
 ```
-
-That is the only Make link on the page. It is removed because the instruction is unverified, not because affiliation was decided. No other Make link remains to keep or strip. Zapier is not given a used claim.
 
 The in-content FAQPage on this post does not contain these statistics. It is unchanged.
 
@@ -334,12 +361,12 @@ After, the answer element:
 <div>The growth field starts at 5%. That is a default assumption, not a measured growth rate. The page does not have a source for 3-7% or 10-15% a month.</div>
 ```
 
-Visible FAQ, the 30% answer. Keep the IRS sentence that was checked. Remove 92.35%, the 10-37% and 0-13.3% ranges, the $30k-$150k band, and 28-35%. Those were not on the IRS page that was opened.
+Visible FAQ, the 30% answer. Keep 15.3% and 92.35%. Publication 334 (2025) says to multiply self-employment earnings by 92.35% (0.9235) and points to line 4a of Schedule SE. The 2026 Schedule SE instructions (PDF dated 28 Oct 2026 in the file header) say to see Pub. 334 and do not themselves print 92.35. That is not a reason to drop the figure. Remove the 10-37% and 0-13.3% ranges, the $30k-$150k band, and 28-35%. Those were not on the IRS pages that were opened.
 
 After:
 
 ```
-<div>The IRS page on self-employment tax says the rate is 15.3%: 12.4% for Social Security and 2.9% for Medicare. For 2026 that page shows a $184,500 Social Security wage base. The calculator's creator-tax field still starts at 30%. That 30% is a default assumption, not an effective rate for a particular return.</div>
+<div>The IRS page on self-employment tax says the rate is 15.3%: 12.4% for Social Security and 2.9% for Medicare. Publication 334 (2025), Tax Guide for Small Business, says to multiply self-employment earnings by 92.35% (0.9235) under the regular method, and it points to line 4a of Schedule SE. The 2026 Instructions for Schedule SE say to see Pub. 334 and do not themselves print 92.35. The calculator's creator-tax field still starts at 30%. That 30% is a default assumption, not an effective rate for a particular return. The old 10-37%, 0-13.3%, $30k-$150k, and 28-35% lines are not on those IRS pages, so they are not repeated.</div>
 ```
 
 The in-content FAQPage JSON-LD repeats the old growth answer and the old 28-35% answer. Those two `text` strings in that script must be replaced with the same two answers, or the visible FAQ and the script disagree. The Rank Math head graph is separate and is not edited. The formula script is not edited.
@@ -354,15 +381,51 @@ Answer-first, manual, not a score: the engine page still opens on the framework.
 
 FAQ and schema, manual: the calculator's visible answers and its in-content FAQPage text are both in the diff so they match. Burnout's FAQPage does not contain the deleted statistics, so that script is unchanged. No schema block is deleted.
 
-## Claim breaches, and why the cluster is not accepted
+## Claim ledger
+
+Status is one of: supported, hypothetical or default, removed in this diff, unresolved.
+
+| URL | Claim | Status |
+|---|---|---|
+| Engine | Chef schedule, once | Supported by the page itself. Personal. |
+| Engine | Make.com "or similar" | Researched wording. No hands-on claim. |
+| Engine | 8 to 12 hours, 18 to 36 months, under $50, 80/20 | Hypothetical. The diff says so. |
+| Engine | 4,200 monthly searches | Removed. No source. |
+| Start Here | 6:30 AM to 3:00 PM | Supported. About page and this page. One telling kept. |
+| How to start | Opening chef shift | Supported. Kept. |
+| How to start | Five to six hours a week | Removed. Not in the locks or About. |
+| How to start | 84% impostor | Supported, narrowed. Kajabi 2020 survey, fetched 8 Nov 2026. |
+| How to start | Nearly half under $500 in 2025 | Supported as a yearly figure by the Creator Spotlight page that was opened. Not 46.8% and not per month. |
+| How to start | $234.65 billion, 2.7x, $31K, 207 million, 45 million, 4% and under $15,000, 434% HubSpot, 39% Orbit, Litmus $36-$42 | Removed in this diff. Circle's opened page lacks the Circle figures. DemandSage returned 403. HubSpot, Orbit, and Litmus were not opened. |
+| Why side hustles fail | Bankrate 27%, 36%, $200, $885, 58/25/14 | Supported. Press release fetched 8 Nov 2026. |
+| Why side hustles fail | $17.77 and 35 referrals | Supported. Receipt lock. |
+| Why side hustles fail | 57.55%, 3.78%, 7.94% | Removed. Not in the linked PDF. |
+| Why side hustles fail | ZipRecruiter $34 and $15-$20; IRS $20,000 | Removed. No opened source. |
+| Mindset | Meal-prep product, while you sleep, unlocked my revenue | Removed. |
+| Mindset | DemandSage 4% and under $15,000; Research Nester $214 billion | Unresolved. DemandSage returned 403. Research Nester was not opened. Not deleted in a block this run. |
+| Burnout | 52% and 37% | Supported. Billion Dollar Boy, 7 July 2025, 1,000 creators, US and UK. |
+| Burnout | 68% algorithmic pressure | Removed. The source's 68% is about agencies. |
+| Burnout | 46.8% per month; 96% under $100k | Removed. Primary pages did not state them. |
+| Burnout | Make link | Kept. Same `rel="sponsored noopener"`. Researched only. |
+| Profitable niches | $100-$500 and $500-$5,000 | Removed. No source. |
+| Blueprint | "Realistic projection" and the example prices | Relabeled as a sketch. The dollar examples are not repeated. |
+| Calendar | "Highest-leverage" | Removed as a banned phrase. |
+| Calendar | APA 20-40%, CoSchedule 331%, HubSpot, Orbit, Bankrate, Whop, Notion 100 million | Unresolved. APA returned an empty block page. The others were not opened. |
+| Metrics | Precedence, Goldman 70%, Hootsuite, Litmus, Kit, NNGroup, and the rest of that source list | Unresolved, except Goldman Sachs was opened and does say brand deals are about 70% of revenue and about 4% of creators make more than $100,000. The page's other citations were not opened. |
+| A/B testing | Convert, Litmus, Founder Reports, Seer, Encharge, TrueList, Growth Engines | Unresolved. Not opened. |
+| Calculator | Input defaults 28, 30, 5, 6 | Default. Unchanged. |
+| Calculator | 15.3% and 92.35% | Supported. IRS self-employment page and Publication 334 (2025). |
+| Calculator | 3-7%, 10-15%, 28-35%, CFPB 3-6 months | Removed or labeled as not found on the pages that were opened. |
+
+## Claim breaches, and why the email cluster is not started
 
 Resolved in the diff by removal or by a label, not by a new story: the meal-prep product, "while you sleep", "unlocked my revenue", "sell passively", "highest-leverage", "realistic projection", the unsourced price bands, Make/Zapier as a setup instruction, 68% algorithmic pressure, 46.8% per month, 96% under $100k because the Kajabi report was not opened, 3-7% and 10-15% monthly growth, 28-35% as a studied effective rate, "CFPB recommends 3-6 months", "five to six focused hours", and the unsourced "typical first blog post" timing. The 84% figure stays only as Kajabi's 2020 survey result. The 52% and 37% stay only as the Billion Dollar Boy survey of 1,000 creators in the US and UK, dated 7 July 2025.
 
 Left untouched, so acceptance stays blocked:
 
-- Every number on the no-change TIGHTEN pages that this pass did not open. The named outline claims and the banned-phrase list were checked. That is not a full fact audit.
-- The IRS 92.35% clause is removed in the proposed FAQ, but the live page still has it until the diff is applied.
-- Make affiliation is unresolved. No question is asked. The one Make link on the burnout post is inside the deleted instruction.
+- 92.35% stays. It is in Publication 334 (2025). It is not removed.
+- Make affiliation is unresolved. No question is asked. The Make link stays, with the same `rel="sponsored noopener"`, in the researched-only Week 4 sentence.
+- These cited claims were not resolved, so the email cluster is not started. DemandSage returned HTTP 403, so the how-to-start and mindset sentences that cite it for 207 million creators, 45 million professionals, 4% over $100k, and over 50% under $15,000 stay unresolved. Circle's current statistics page does not contain "$234.65 billion" or "2.7x" or "$31K"; those sentences are deleted in this diff. HubSpot "434% more indexed pages", Orbit Media "39%", Litmus "$36-$42", APA "20-40%", CoSchedule "331%", and the metrics and A/B-testing citations (Linktree, Precedence, Hootsuite, Kit, NNGroup, Convert, Founder Reports, and the rest of those source lists) were not opened. They stay on the live pages and in the captured HTML. They are not treated as verified, and they are not deleted in a block this run, because deleting a whole evidence section without reading it would risk cutting a true figure. That is the stop.
 - Rank Math and the other in-content schema emitters are still outside this repo.
 - UniConsent contrast, the 15 absent style ids, and the October manifest hashes are unchanged.
 - Token merge stays deferred. No value was chosen among the conflicting tokens.
