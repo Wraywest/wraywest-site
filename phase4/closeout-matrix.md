@@ -29,7 +29,7 @@ The eight `transition:all` rules now name color, background-color, border-color,
 
 ## Phase 5 sequence
 
-Do not start these in the same review. Order is the outline list, then the cluster map, then the claim-conflict pages that are not already in that list. URLs are the live paths. Redirect plan: no 301 is applied. The Phase 3 premise that `/blog/second-income-product-blueprint/` contains "The 12-Month Revenue Roadmap" and "Step 2: Choose Your Revenue Model" is not supported by the captured headings. Those two URLs stay separate. No redirect is added between them. The older parked proposal, `/blog/creator-business-blueprint-second-income-2026/` to `/blog/how-to-start-creator-business-no-audience/`, is a different URL pair and stays parked. It is not applied.
+Do not start these in the same review. Order is the outline list, then the cluster map, then the claim-conflict pages that are not already in that list. URLs are the live paths. Redirect plan: no 301 is applied, and none of the three URLs change. Phase 2 in `DIRECTION` names one pair: `/blog/creator-business-blueprint-second-income-2026/` to `/blog/how-to-start-creator-business-no-audience/`. That source page does contain "The 12-Month Revenue Roadmap" and "Step 2: Choose Your Revenue Model (Stack, Don't Scatter)". An earlier note inspected `/blog/second-income-product-blueprint/` instead, and that post does not contain those headings. After reading the Phase 2 pair, the recommendation is retain, not absorb and not redirect: Step 2 and the roadmap are unsourced dollar bands, and the how-to post's own Step 2 is a different section.
 
 Outline order, from `OUTLINES` and the scoreboard REWRITE rows:
 

@@ -27,17 +27,19 @@ Cluster acceptance stays blocked. The diffs below are a review file. They are no
 
 Not read: the Kajabi 2024 State of Creators instrument. Firecrawl was not available (`npx firecrawl` could not determine an executable). No proofread binary, GEO binary, or schema validator was run. The checks below are manual.
 
-## Heading inventory, merge decision
+## Heading inventory, three slugs
 
-Captured `/blog/second-income-product-blueprint/` H2s, in order: Building Your Second Income Stream. The Three Product Types. The 90-Day Validation Framework. The Full Launch Blueprint. Revenue Timeline. The Pricing Formula. The Marketing Framework. Realistic Conversion Math. Your 90-Day Action Plan. The Uncomfortable Truths. Frequently Asked Questions. Sources & Further Reading. Keep reading.
+These are three different posts. The earlier heading note compared the wrong one.
 
-H3s under the 90-day framework: Days 1-10: Validation (The "Presell"). Days 11-30: The MVP (Minimum Viable Product). Days 31-90: Beta Launch & Iteration.
+Phase 2, in `DIRECTION`, proposes one 301: `/blog/creator-business-blueprint-second-income-2026/` to `/blog/how-to-start-creator-business-no-audience/`. That pair was re-read for this note. The earlier inventory inspected `/blog/second-income-product-blueprint/`, which `DIRECTION` lists as its own supporting post. That inspection does not decide the Phase 2 pair.
 
-Captured `/blog/how-to-start-creator-business-no-audience/` H2s, in order: Introduction. The Myth of "Build an Audience First". Step 1: Choose One Niche, One Platform. Step 2: Publish Before You're Ready. Step 3: Own Your Audience From Day One. Step 4: Build a 90-Day Publishing System. Step 5: Monetize Small, Learn Fast. What a Realistic First 90 Days Looks Like. Start Today, Not Monday. Frequently Asked Questions. Sources & Further Reading. Keep reading.
+`/blog/second-income-product-blueprint/` H2s: Building Your Second Income Stream. The Three Product Types. The 90-Day Validation Framework. The Full Launch Blueprint. Revenue Timeline. The Pricing Formula. The Marketing Framework. Realistic Conversion Math. Your 90-Day Action Plan. The Uncomfortable Truths. Frequently Asked Questions. Sources & Further Reading. It does not contain "The 12-Month Revenue Roadmap" or "Step 2: Choose Your Revenue Model (Stack, Don't Scatter)".
 
-The Phase 3 outline names "The 12-Month Revenue Roadmap" and "Step 2: Choose Your Revenue Model (Stack, Don't...)". Neither heading is on either captured page. The blueprint's nearest lines are the H2 "Revenue Timeline" and the sentence "how revenue grows over 12 months based on the product type you choose." That is not the named section.
+`/blog/creator-business-blueprint-second-income-2026/` does contain both headings. Step 2 lists five models with unsourced prices: services at $50 to $200 an hour, a $49 template or a $199 mini-course called "pure passive income," content monetization at $100 to $5,000 a month, affiliate commissions at 5 to 30 percent, and memberships at $10 to $50 a month. The roadmap is already labeled "illustrative ranges, not a guaranteed timeline": Q1 $0 to $500 a month, Q2 $500 to $1,500, Q3 $1,500 to $3,000, Q4 $3,000 to $5,000 or more. It links to `/the-second-income-engine/`.
 
-Recommendation: keep the two URLs separate. Do not absorb, and do not apply a 301. There is no existing block that is the outline's named section, so a "precise absorb" would be an invention.
+`/blog/how-to-start-creator-business-no-audience/` H2s: Introduction. The Myth of "Build an Audience First". Step 1: Choose One Niche, One Platform. Step 2: Publish Before You're Ready. Step 3: Own Your Audience From Day One. Step 4: Build a 90-Day Publishing System. Step 5: Monetize Small, Learn Fast. What a Realistic First 90 Days Looks Like. Start Today, Not Monday. Frequently Asked Questions. Sources & Further Reading. Its Step 2 is a publishing step, not the revenue-model stack.
+
+Recommendation: retain all three URLs. Do not absorb those two sections into the how-to post. The named headings exist on the Phase 2 source, and their dollar bands are not sourced. Moving them would copy unsupported prices onto the survivor. No 301 either way. URLs stay as they are.
 
 ## 1. `/the-second-income-engine/`
 
@@ -123,7 +125,15 @@ The paragraph under that H3 says "But consider: 84% of entrepreneurs feel the sa
 
 The next paragraph says a typical first post takes weeks, many rounds of revision, and only a trickle of views, and that the tenth post takes a fraction of the time. No source is on the page. After, delete that paragraph. The following paragraph, "Speed comes from repetition, not preparation.", stays.
 
-Circle's current statistics page, fetched 8 Nov 2026, does not contain "$234.65 billion", "2.7x", or "$31K". Delete the sentences that state those figures, including the repeats in the TL;DR, the email section, the closing, and the FAQPage JSON-LD. DemandSage returned HTTP 403, so delete the sentences that cite it for 207 million creators, 45 million professionals, 4% over $100,000, and over 50% under $15,000. HubSpot "434% more indexed pages", Orbit Media "39%", and Litmus "$36-$42" were not opened, so those sentences are deleted rather than kept as if they had been checked. No replacement market figure is added. Creator Spotlight's opened report does support "nearly half ... less than $500" in 2025, among 427 readers, so that sentence can stay if the link is `https://www.creatorspotlight.com/p/monetization-report-2025`, the page that was read. The on-page host `creatorspotlight.co` was not opened. Do not add "per month" or "46.8%". The FAQPage JSON-LD answers that repeat the deleted figures must use the same remaining text.
+Circle's current statistics page, fetched 8 Nov 2026, does not contain "$234.65 billion", "2.7x", or "$31K". Delete the sentences that state those figures, including the repeats in the TL;DR, the email section, the closing, and the FAQPage JSON-LD. DemandSage returned HTTP 403. Those sentences stay listed as unresolved in the citation ledger. They are omitted from the proposed text because the cited page could not be read, not because the figures were disproven. No replacement market figure is added.
+
+Opened on the same date, these three are no longer "not opened":
+
+- `https://www.hubspot.com/marketing-statistics` returned the 2026 marketing statistics page. The extracted text does not contain 434% or "indexed pages." Delete both "434% more indexed pages" sentences and the sources-list line that repeats them.
+- `https://www.orbitmedia.com/blog/blogging-statistics/` is the 2026 survey. It does not say 39% of bloggers writing 2,000-word posts report strong outcomes. Delete that sentence and the sources-list line. Do not insert the page's current "14% report strong results" or "3 hours, 20 minutes" as a substitute.
+- `https://www.litmus.com/resources/email-marketing-roi` says: "On average, email drives an ROI of $36 for every dollar spent." The blog post `https://www.litmus.com/blog/email-marketing-roi` says 35% of companies see $10 to $36 per $1, from nearly 500 marketing professionals, and that email ROI is between 10:1 and 36:1 for most companies. Neither page says $42. Replace "$36 to $42" and "$36-$42" with "an average of $36 for every dollar spent, on Litmus's email ROI guide." The sources-list line uses that same wording.
+
+Creator Spotlight's opened report supports "nearly half ... less than $500" in 2025, among 427 readers, so that sentence can stay if the link is `https://www.creatorspotlight.com/p/monetization-report-2025`. The on-page host `creatorspotlight.co` did not resolve. Do not add "per month" or "46.8%". FAQPage JSON-LD answers that repeat a deleted or narrowed figure use the same remaining text. The Repurpose affiliate link in Step 5 stays a tool link. It is not a hands-on use claim.
 
 ## 4. `/blog/why-side-hustles-fail/`
 
@@ -192,6 +202,8 @@ unlocked my revenue
 ```
 
 The sentence becomes: "The shift that mattered was simple: stop chasing attention and start building trust." No revenue number is added.
+
+The Research Nester URL was opened on 8 Nov 2026 and is a flanges market page. Delete every sentence that cites it for $178.4 billion or $214 billion. Litmus, on the two pages that were opened, supports $36 per dollar and does not support $42, 4.24%, or 0.59%. Narrow that sentence to the $36 line. DemandSage sentences on this page stay, marked open, because the host returned 403 and was not requested again. Korn Ferry's 71% line stays and is not called verified: the title states it and the extracted body did not include the sample.
 
 ## 6. `/blog/creator-burnout-truth/`
 
@@ -315,13 +327,15 @@ After:
 the habit this system depends on
 ```
 
+Also delete, with no replacement figure: the Orbit sentence that says a post takes 3 hours and 48 minutes and that 6 or more hours makes bloggers 35% more likely to report strong results; both HubSpot sentences that say 16 or more articles a month bring 3.5 times the organic traffic; and the sentence that says 38% of American workers have a side hustle and 67% report burnout. CoSchedule's 331% sentences stay. Both APA 20-40% sentences stay and are marked open. The Notion "100 million users as of 2025" sentence stays and is not called verified.
+
 ## 11. `/blog/solo-creator-metrics-that-matter/`
 
-TIGHTEN. No sentence change on the named claims. Not a full numeric audit.
+TIGHTEN. Goldman Sachs stays: about 70% of revenue from brand deals, and about 4% of creators above $100,000. Klaviyo's "20% to 30%" glossary line stays. Delete the Precedence "over $254 billion" clause and leave the Linktree clause, which was not opened. Delete the Hootsuite "1% to 5%" sentence, the Mailchimp "35% to 45%" and "21%" sentence, the Sumo "1.95%" and "18% to 34%" sentence, the Simply Business "77%" clause, and the influencer-marketing "10x to 50x" clause. Narrow Litmus to $36. Narrow the NNGroup line to "79 percent of our test users." Leave the Socialinsider sentence unrewritten. Leave Founder Reports marked open. The per-URL record is `CITATION-LEDGER.md`.
 
 ## 12. `/blog/ab-testing-one-person-businesses/`
 
-TIGHTEN. No sentence change on the named claims. Not a full numeric audit.
+TIGHTEN. Keep the Seer sentences and name the page's baseline: 61,000 visitors for two versions and 122,000 for four, for a 10% increase on a 5% conversion rate at 95% significance. Narrow the Litmus payoff line to the article's own figure: 12% of the email marketers Litmus asked cited A/B testing as part of how they improved a 36:1 ROI. Leave Convert, Encharge, Founder Reports, the TrueList 541% line (it cites Marketing Sherpa, which was not opened), and Growth Engines marked open. Do not delete those paragraphs.
 
 ## 13. `/tools/quit-9-to-5-calculator/`
 
@@ -375,7 +389,7 @@ The in-content FAQPage JSON-LD repeats the old growth answer and the old 28-35% 
 
 Proofread of the after sentences: American English, contractions, no em dash, no new date, no new personal number. The chef shift remains one telling on Start Here and on the how-to-start opening.
 
-Factual check: each kept figure above is tied to a URL in the source table and to the fetch on 8 Nov 2026. Removed figures are the ones those pages did not state.
+Factual check: each kept figure above is tied to a URL in the source table or in `CITATION-LEDGER.md`, from the 8 Nov 2026 fetches. A removed figure is one the opened page did not state. A blocked URL is listed as open and is not called disproven. No GEO score was recalculated.
 
 Answer-first, manual, not a score: the engine page still opens on the framework. Start Here still opens on who the site is for. The how-to-start opening, zero followers and the chef shift, stays. Mindset loses a middle section, not its opening. Burnout loses unsupported chart lines. The first-screen answer was not given a new score.
 
@@ -396,13 +410,20 @@ Status is one of: supported, hypothetical or default, removed in this diff, unre
 | How to start | Five to six hours a week | Removed. Not in the locks or About. |
 | How to start | 84% impostor | Supported, narrowed. Kajabi 2020 survey, fetched 8 Nov 2026. |
 | How to start | Nearly half under $500 in 2025 | Supported as a yearly figure by the Creator Spotlight page that was opened. Not 46.8% and not per month. |
-| How to start | $234.65 billion, 2.7x, $31K, 207 million, 45 million, 4% and under $15,000, 434% HubSpot, 39% Orbit, Litmus $36-$42 | Removed in this diff. Circle's opened page lacks the Circle figures. DemandSage returned 403. HubSpot, Orbit, and Litmus were not opened. |
+| How to start | $234.65 billion, 2.7x, $31K | Removed. Circle's opened page does not state them. |
+| How to start | DemandSage 207 million, 45 million, 4%, under $15,000 | Omitted from the proposed text. The URL returned 403. Not disproven. Still an open claim. |
+| How to start | HubSpot 434% more indexed pages | Removed. The 2026 marketing-statistics page does not contain it. |
+| How to start | Orbit 39% | Removed. The 2026 blogging survey does not say 39%. |
+| How to start | Litmus $36 to $42 | Narrowed to $36. The ROI guide says $36 per dollar. Neither Litmus page says $42. |
 | Why side hustles fail | Bankrate 27%, 36%, $200, $885, 58/25/14 | Supported. Press release fetched 8 Nov 2026. |
 | Why side hustles fail | $17.77 and 35 referrals | Supported. Receipt lock. |
 | Why side hustles fail | 57.55%, 3.78%, 7.94% | Removed. Not in the linked PDF. |
 | Why side hustles fail | ZipRecruiter $34 and $15-$20; IRS $20,000 | Removed. No opened source. |
 | Mindset | Meal-prep product, while you sleep, unlocked my revenue | Removed. |
-| Mindset | DemandSage 4% and under $15,000; Research Nester $214 billion | Unresolved. DemandSage returned 403. Research Nester was not opened. Not deleted in a block this run. |
+| Mindset | DemandSage income, headcount, and $3,680 lines | Open. `demandsage.com` returned 403. Not retried. Not deleted as disproven. |
+| Mindset | Research Nester $178.4 billion and $214 billion | Removed. The cited URL now serves a flanges market page, report 6083, dated 31 Aug 2026. It does not mention a creator economy. |
+| Mindset | Litmus $36 to $42, plus 4.24% versus 0.59% | $36 kept. $42, 4.24%, and 0.59% are not on the two Litmus pages. |
+| Mindset | Korn Ferry 71% of CEOs | Open. The page title states it. The extracted article body did not include the sample. Not called verified. |
 | Burnout | 52% and 37% | Supported. Billion Dollar Boy, 7 July 2025, 1,000 creators, US and UK. |
 | Burnout | 68% algorithmic pressure | Removed. The source's 68% is about agencies. |
 | Burnout | 46.8% per month; 96% under $100k | Removed. Primary pages did not state them. |
@@ -410,9 +431,24 @@ Status is one of: supported, hypothetical or default, removed in this diff, unre
 | Profitable niches | $100-$500 and $500-$5,000 | Removed. No source. |
 | Blueprint | "Realistic projection" and the example prices | Relabeled as a sketch. The dollar examples are not repeated. |
 | Calendar | "Highest-leverage" | Removed as a banned phrase. |
-| Calendar | APA 20-40%, CoSchedule 331%, HubSpot, Orbit, Bankrate, Whop, Notion 100 million | Unresolved. APA returned an empty block page. The others were not opened. |
-| Metrics | Precedence, Goldman 70%, Hootsuite, Litmus, Kit, NNGroup, and the rest of that source list | Unresolved, except Goldman Sachs was opened and does say brand deals are about 70% of revenue and about 4% of creators make more than $100,000. The page's other citations were not opened. |
-| A/B testing | Convert, Litmus, Founder Reports, Seer, Encharge, TrueList, Growth Engines | Unresolved. Not opened. |
+| Calendar | CoSchedule 331% | Supported as stated. The paragraph does not name the sample. |
+| Calendar | HubSpot 3.5x from 16 or more articles | Removed. Not on the 2026 marketing-statistics page. |
+| Calendar | Orbit 3 hours 48 minutes and 35% | Removed. The 2026 survey says 3 hours 20 minutes and does not say 35% or 48 minutes. The current time is not inserted. |
+| Calendar | Bankrate 38% and Whop 67% burnout | Removed. The Bankrate URL returned 404. Whop's 67% is about Amazon, and its burnout line is 20% of US quitters. |
+| Calendar | APA 20-40% | Open. Incapsula empty page. Not retried. Not called disproven. |
+| Calendar | Notion 100 million users as of 2025 | Open. The title is "100 Million of You". The extracted body does not date a user count. |
+| Metrics | Goldman about 70% brand deals and about 4% over $100,000 | Supported. |
+| Metrics | Precedence over $254 billion | Removed. The opened page says USD 313.95 billion in 2026. That replacement is not inserted. |
+| Metrics | Hootsuite 1% to 5% | Removed. Not on the social-trends page. |
+| Metrics | NNGroup 79% | Narrowed. The article says 79 percent of its test users always scanned. |
+| Metrics | Klaviyo 20% to 30% repeat purchase | Supported as the glossary line "typically around 20% to 30%." No study sample was in that sentence. |
+| Metrics | Socialinsider Instagram 0.50% | Partial. 0.50% and TikTok 2.50% / 3.70% appear. "Over 10,000 followers" and "4.0%" do not. Not rewritten. |
+| Metrics | Mailchimp 35% to 45% and 21%; Kit dollar range; Sumo 1.95% and 18% to 34%; Simply Business 77%; IMH 10x to 50x | Removed. Those figures are not in the extracted text of the fetched pages. Sumo's URL returned a different site. |
+| Metrics | Founder Reports $39,273 and 29.8 million / $1.7 trillion | Open. Cloudflare "Just a moment." Not called disproven. |
+| A/B testing | Seer 61,000 and 122,000 visitors | Supported. The page's table is for a 10% increase on a 5% conversion rate at 95% significance. |
+| A/B testing | Litmus, 12% cited A/B testing | Supported on the Litmus A/B article, as 12% of the marketers they asked, tied to the 36:1 figure. The looser "marketers who test credit it" line needs that narrowing. |
+| A/B testing | TrueList 541% | Not verified. The page attributes it to Marketing Sherpa. That study was not opened. |
+| A/B testing | Convert calculator figures, Encharge 49.29%, Growth Engines 25% to 40% | Open. Convert and Encharge returned a block page. Growth Engines returned an empty file. |
 | Calculator | Input defaults 28, 30, 5, 6 | Default. Unchanged. |
 | Calculator | 15.3% and 92.35% | Supported. IRS self-employment page and Publication 334 (2025). |
 | Calculator | 3-7%, 10-15%, 28-35%, CFPB 3-6 months | Removed or labeled as not found on the pages that were opened. |
@@ -425,7 +461,7 @@ Left untouched, so acceptance stays blocked:
 
 - 92.35% stays. It is in Publication 334 (2025). It is not removed.
 - Make affiliation is unresolved. No question is asked. The Make link stays, with the same `rel="sponsored noopener"`, in the researched-only Week 4 sentence.
-- These cited claims were not resolved, so the email cluster is not started. DemandSage returned HTTP 403, so the how-to-start and mindset sentences that cite it for 207 million creators, 45 million professionals, 4% over $100k, and over 50% under $15,000 stay unresolved. Circle's current statistics page does not contain "$234.65 billion" or "2.7x" or "$31K"; those sentences are deleted in this diff. HubSpot "434% more indexed pages", Orbit Media "39%", Litmus "$36-$42", APA "20-40%", CoSchedule "331%", and the metrics and A/B-testing citations (Linktree, Precedence, Hootsuite, Kit, NNGroup, Convert, Founder Reports, and the rest of those source lists) were not opened. They stay on the live pages and in the captured HTML. They are not treated as verified, and they are not deleted in a block this run, because deleting a whole evidence section without reading it would risk cutting a true figure. That is the stop.
+- The per-URL record for this pass is `phase5/cluster-1/CITATION-LEDGER.md`. Figures the opened page does not state are omitted from the proposed text. Blocked pages stay open and are not called disproven. The email cluster is not started. Linktree's "under $1,000" clause was not opened. DemandSage and the APA multitasking page were not retried.
 - Rank Math and the other in-content schema emitters are still outside this repo.
 - UniConsent contrast, the 15 absent style ids, and the October manifest hashes are unchanged.
 - Token merge stays deferred. No value was chosen among the conflicting tokens.
